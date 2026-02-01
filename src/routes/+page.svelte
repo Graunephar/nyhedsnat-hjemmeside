@@ -21,7 +21,7 @@
 	<div class="relative z-10 text-center max-w-4xl mx-auto">
 		<!-- Main heading -->
 		<h1 class="text-4xl md:text-6xl lg:text-7xl font-bold mb-4">
-			<span class="text-gradient-gold">Nyhedsnat</span>
+			<span class="text-gradient-gold">NyhedsNat</span>
 			<br />
 			<span class="text-star-white text-3xl md:text-4xl lg:text-5xl">i Landsdel 4</span>
 		</h1>
@@ -33,7 +33,7 @@
 
 		<!-- Subtitle -->
 		<p class="text-lg md:text-xl text-star-white/80 mb-10 max-w-3xl mx-auto leading-relaxed">
-			Nyhedsnat er et årligt arrangement for væbnere, seniorvæbnere og seniorer i Landsdel 4. Over
+			NyhedsNat er et årligt arrangement for væbnere, seniorvæbnere og seniorer i Landsdel 4. Over
 			en nat samles deltagere i redaktioner, oplever events og laver aviser i en fælles legeramme.
 		</p>
 
