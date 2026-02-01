@@ -97,14 +97,14 @@ body {
 	50% { opacity: 1; }
 }
 
-/* Shooting star animation */
+/* Shooting star animation - less frequent */
 .shooting-star {
 	position: absolute;
 	width: 100px;
 	height: 2px;
 	background: linear-gradient(90deg, #fcd34d, transparent);
 	border-radius: 50%;
-	animation: shoot 3s ease-in-out infinite;
+	animation: shoot 12s ease-in-out infinite;
 	opacity: 0;
 }
 
@@ -117,13 +117,13 @@ body {
 .shooting-star:nth-child(2) {
 	top: 35%;
 	left: 85%;
-	animation-delay: 2s;
+	animation-delay: 8s;
 }
 
 .shooting-star:nth-child(3) {
 	top: 55%;
 	left: 60%;
-	animation-delay: 4s;
+	animation-delay: 16s;
 }
 
 @keyframes shoot {
@@ -131,10 +131,10 @@ body {
 		transform: translateX(0) translateY(0) rotate(-45deg);
 		opacity: 0;
 	}
-	10% {
+	3% {
 		opacity: 1;
 	}
-	30% {
+	8% {
 		transform: translateX(-200px) translateY(200px) rotate(-45deg);
 		opacity: 0;
 	}

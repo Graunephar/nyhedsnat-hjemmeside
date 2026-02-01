@@ -2,6 +2,7 @@
 	import './layout.css';
 	import Navigation from '$lib/components/Navigation.svelte';
 	import Footer from '$lib/components/Footer.svelte';
+	import Drone from '$lib/components/Drone.svelte';
 
 	let { children } = $props();
 </script>
@@ -14,9 +15,10 @@
 <!-- Animated starfield background -->
 <div class="starfield">
 	<div class="shooting-star"></div>
-	<div class="shooting-star"></div>
-	<div class="shooting-star"></div>
 </div>
+
+<!-- Flying drone -->
+<Drone />
 
 <!-- Main app structure -->
 <div class="min-h-screen flex flex-col">
@@ -27,5 +29,29 @@
 		{@render children()}
 	</main>
 
+	<!-- Houses silhouette at the bottom -->
+	<div class="houses-container">
+		<img src="/svg/huse.svg" alt="" class="houses-silhouette" aria-hidden="true" />
+	</div>
+
 	<Footer />
 </div>
+
+<style>
+	.houses-container {
+		width: 100%;
+		overflow: hidden;
+		margin-top: auto;
+		position: relative;
+		z-index: 1;
+	}
+
+	.houses-silhouette {
+		width: 100%;
+		height: auto;
+		display: block;
+		min-width: 1200px;
+		margin-left: 50%;
+		transform: translateX(-50%);
+	}
+</style>
