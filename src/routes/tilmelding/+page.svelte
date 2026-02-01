@@ -46,7 +46,11 @@
 				</li>
 			</ul>
 
-			<p class="text-star-white/60 mb-8">
+			<p class="text-2xl font-bold text-gold-400">
+				Tilmeldingen åbner 1. juli
+			</p>
+
+			<!-- <p class="text-star-white/60 mb-8">
 				Klik på knappen herunder for at gå til tilmeldingen:
 			</p>
 
@@ -55,7 +59,7 @@
 				class="inline-block px-10 py-5 bg-gradient-to-r from-gold-500 to-gold-600 text-night-900 font-bold text-xl rounded-full glow-gold hover:scale-105 transition-all duration-300"
 			>
 				Gå til tilmelding
-			</a>
+			</a> -->
 		</div>
 
 		<!-- Requirements reminder -->

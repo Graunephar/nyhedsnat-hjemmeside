@@ -4,6 +4,9 @@
 	import Footer from '$lib/components/Footer.svelte';
 	import Drone from '$lib/components/Drone.svelte';
 	import Ufo from '$lib/components/Ufo.svelte';
+	import Car from '$lib/components/Car.svelte';
+	import Bus from '$lib/components/Bus.svelte';
+	import Convoy from '$lib/components/Convoy.svelte';
 
 	let { children } = $props();
 </script>
@@ -41,6 +44,9 @@
 
 	<!-- Houses silhouette at the bottom -->
 	<div class="houses-container">
+		<Car />
+		<Bus />
+		<Convoy />
 		<img src="/svg/huse.svg" alt="" class="houses-silhouette" aria-hidden="true" />
 	</div>
 
