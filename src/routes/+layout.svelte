@@ -3,12 +3,13 @@
 	import Navigation from '$lib/components/Navigation.svelte';
 	import Footer from '$lib/components/Footer.svelte';
 	import Drone from '$lib/components/Drone.svelte';
+	import Ufo from '$lib/components/Ufo.svelte';
 
 	let { children } = $props();
 </script>
 
 <svelte:head>
-	<link rel="icon" href="/images/logo.png" />
+	<link rel="icon" href="/svg/logo.svg" type="image/svg+xml" />
 	<meta name="theme-color" content="#030712" />
 </svelte:head>
 
@@ -19,6 +20,9 @@
 
 <!-- Flying drone -->
 <Drone />
+
+<!-- UFO with search pattern -->
+<Ufo />
 
 <!-- Main app structure -->
 <div class="min-h-screen flex flex-col main-content">

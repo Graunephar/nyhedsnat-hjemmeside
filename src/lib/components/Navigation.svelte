@@ -36,28 +36,26 @@
 	function getMobileLinkClass(href: string): string {
 		const base =
 			'block px-4 py-3 rounded-lg hover:text-gold-400 hover:bg-night-700/50 transition-all font-medium text-lg';
-		return isActive(href)
-			? `${base} text-gold-400 bg-night-700/50`
-			: `${base} text-star-white/80`;
+		return isActive(href) ? `${base} text-gold-400 bg-night-700/50` : `${base} text-star-white/80`;
 	}
 </script>
 
-<header class="fixed top-0 left-0 right-0 z-50">
+<header class="fixed top-0 right-0 left-0 z-50">
 	<!-- Main header with large logo -->
-	<div class="bg-night-900/90 backdrop-blur-md border-b border-gold-500/20">
-		<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+	<div class="border-b border-gold-500/20 bg-night-900/90 backdrop-blur-md">
+		<div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
 			<div class="flex items-center justify-between py-4 md:py-6">
 				<!-- Large Logo Area -->
-				<a href="/" class="flex items-center gap-4 group" onclick={closeMobileMenu}>
+				<a href="/" class="group flex items-center gap-4" onclick={closeMobileMenu}>
 					<img
-						src="/images/logo.png"
+						src="/svg/logo.svg"
 						alt="NyhedsNat Logo"
-						class="h-16 sm:h-20 md:h-24 lg:h-28 w-auto transition-transform duration-300 group-hover:scale-105 drop-shadow-lg"
+						class="h-16 w-auto drop-shadow-lg transition-transform duration-300 group-hover:scale-105 sm:h-20 md:h-24 lg:h-28"
 					/>
 				</a>
 
 				<!-- Desktop Navigation -->
-				<nav class="hidden md:flex items-center gap-6 lg:gap-10">
+				<nav class="hidden items-center gap-6 md:flex lg:gap-10">
 					{#each navLinks as link}
 						<a href={link.href} class={getDesktopLinkClass(link.href)}>
 							{link.label}
@@ -68,23 +66,23 @@
 				<!-- Mobile Menu Button -->
 				<button
 					onclick={toggleMobileMenu}
-					class="md:hidden flex flex-col gap-1.5 p-3 rounded-lg hover:bg-night-700/50 transition-colors"
+					class="flex flex-col gap-1.5 rounded-lg p-3 transition-colors hover:bg-night-700/50 md:hidden"
 					aria-label="Toggle menu"
 					aria-expanded={mobileMenuOpen}
 				>
 					<span
-						class="block w-7 h-0.5 bg-gold-400 transition-all duration-300 origin-center {mobileMenuOpen
-							? 'rotate-45 translate-y-2'
+						class="block h-0.5 w-7 origin-center bg-gold-400 transition-all duration-300 {mobileMenuOpen
+							? 'translate-y-2 rotate-45'
 							: ''}"
 					></span>
 					<span
-						class="block w-7 h-0.5 bg-gold-400 transition-all duration-300 {mobileMenuOpen
+						class="block h-0.5 w-7 bg-gold-400 transition-all duration-300 {mobileMenuOpen
 							? 'opacity-0'
 							: ''}"
 					></span>
 					<span
-						class="block w-7 h-0.5 bg-gold-400 transition-all duration-300 origin-center {mobileMenuOpen
-							? '-rotate-45 -translate-y-2'
+						class="block h-0.5 w-7 origin-center bg-gold-400 transition-all duration-300 {mobileMenuOpen
+							? '-translate-y-2 -rotate-45'
 							: ''}"
 					></span>
 				</button>
@@ -95,9 +93,9 @@
 	<!-- Mobile Navigation Dropdown -->
 	{#if mobileMenuOpen}
 		<div
-			class="md:hidden bg-night-800/95 backdrop-blur-md border-b border-gold-500/20 animate-slideDown"
+			class="animate-slideDown border-b border-gold-500/20 bg-night-800/95 backdrop-blur-md md:hidden"
 		>
-			<nav class="px-4 py-4 space-y-2">
+			<nav class="space-y-2 px-4 py-4">
 				{#each navLinks as link}
 					<a href={link.href} onclick={closeMobileMenu} class={getMobileLinkClass(link.href)}>
 						{link.label}

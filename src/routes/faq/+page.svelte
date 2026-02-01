@@ -1,14 +1,6 @@
 <script lang="ts">
 	const faqs = [
 		{
-			question: 'Er Nyhedsnat en rigtig journalistøvelse?',
-			answer: `Nej. Journalistrollen er en legeramme. Nyhedsnat handler om leg, fantasi og fælles oplevelser – præcis som mange andre aktiviteter i FDF.
-
-Seniorerne leger forskellige roller og laver sjove, dramatiske eller aktuelle hændelser. Væbnere og seniorvæbnere leger journalister, der oplever hændelserne, stiller spørgsmål og fortæller videre, hvad der er sket.
-
-Der er ingen forventning om, at deltagerne arbejder journalistisk korrekt eller realistisk.`
-		},
-		{
 			question: 'Skal man være god til at skrive for at deltage?',
 			answer: `Nej. Aviserne kan bestå af mange forskellige typer indhold.
 
@@ -70,12 +62,6 @@ Det gør dem genkendelige og sjove at arbejde med, samtidig med at de er tydelig
 • Video
 • Links
 • Uploads`
-		},
-		{
-			question: 'Hvem kontakter vi, hvis vi har spørgsmål?',
-			answer: `I er altid velkomne til at skrive til:
-
-info@nyhedsnat.dk`
 		}
 	];
 
