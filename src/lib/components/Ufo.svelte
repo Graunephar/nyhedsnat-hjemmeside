@@ -224,16 +224,16 @@
 
 	@keyframes ufo-wobble {
 		0%, 100% {
-			transform: rotate(-2deg) scale(1);
+			transform: rotate(-4deg) scale(1);
 		}
 		25% {
-			transform: rotate(2deg) scale(1.02);
+			transform: rotate(4deg) scale(1.04);
 		}
 		50% {
-			transform: rotate(-1deg) scale(0.98);
+			transform: rotate(-2deg) scale(0.96);
 		}
 		75% {
-			transform: rotate(1deg) scale(1.01);
+			transform: rotate(2deg) scale(1.02);
 		}
 	}
 </style>

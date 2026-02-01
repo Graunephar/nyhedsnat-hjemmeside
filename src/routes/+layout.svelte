@@ -18,6 +18,12 @@
 	<div class="shooting-star"></div>
 </div>
 
+<!-- Moon in top right corner -->
+<div class="moon-container">
+	<div class="moon-glow"></div>
+	<img src="/svg/moon.svg" alt="" class="moon" aria-hidden="true" />
+</div>
+
 <!-- Flying drone -->
 <Drone />
 
@@ -25,7 +31,7 @@
 <Ufo />
 
 <!-- Main app structure -->
-<div class="min-h-screen flex flex-col main-content">
+<div class="main-content flex min-h-screen flex-col">
 	<Navigation />
 
 	<!-- Main content with padding for fixed header -->
@@ -42,6 +48,53 @@
 </div>
 
 <style>
+	.moon-container {
+		position: absolute;
+		top: 200px;
+		right: 50px;
+		z-index: 1;
+		pointer-events: none;
+	}
+
+	.moon {
+		width: 120px;
+		height: auto;
+		position: relative;
+		z-index: 1;
+	}
+
+	.moon-glow {
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		width: 200px;
+		height: 200px;
+		border-radius: 50%;
+		background: radial-gradient(
+			circle,
+			rgba(255, 255, 235, 0.45) 0%,
+			rgba(255, 255, 215, 0.28) 22%,
+			rgba(255, 255, 190, 0.14) 45%,
+			rgba(255, 255, 160, 0.05) 70%,
+			transparent 100%
+		);
+		filter: blur(30px);
+		animation: moon-pulse 8s ease-in-out infinite;
+	}
+
+	@keyframes moon-pulse {
+		0%,
+		100% {
+			opacity: 0.8;
+			transform: translate(-50%, -50%) scale(1);
+		}
+		50% {
+			opacity: 1;
+			transform: translate(-50%, -50%) scale(1.1);
+		}
+	}
+
 	.main-content {
 		position: relative;
 		z-index: 2;
