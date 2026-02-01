@@ -5,10 +5,12 @@
 
 	const navLinks = [
 		{ href: '/', label: 'Hjem' },
-		{ href: '/page-1', label: 'Side 1' },
-		{ href: '/page-2', label: 'Side 2' },
-		{ href: '/page-3', label: 'Side 3' },
-		{ href: '/page-4', label: 'Side 4' }
+		{ href: '/tilmelding', label: 'Tilmelding' },
+		{ href: '/program', label: 'Program' },
+		{ href: '/praktisk', label: 'Praktisk' },
+		{ href: '/regler', label: 'Regler' },
+		{ href: '/faq', label: 'FAQ' },
+		{ href: '/kontakt', label: 'Kontakt' }
 	];
 
 	function toggleMobileMenu() {

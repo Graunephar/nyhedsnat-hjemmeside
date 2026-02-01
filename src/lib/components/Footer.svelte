@@ -3,35 +3,68 @@
 </script>
 
 <footer class="relative z-10 bg-night-900/80 backdrop-blur-md border-t border-gold-500/20 mt-auto">
-	<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
-		<div class="flex flex-col md:flex-row items-center justify-between gap-4">
-			<!-- Logo and tagline -->
-			<div class="flex items-center gap-3">
-				<img src="/images/logo.png" alt="NyhedsNat" class="h-8 w-auto" />
-				<span class="text-star-white/60 text-sm">Nattens nyheder</span>
+	<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+		<div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-8">
+			<!-- FDF Landsdel 4 -->
+			<div>
+				<a
+					href="https://fdf.dk/landsdel4/"
+					target="_blank"
+					rel="noopener noreferrer"
+					class="inline-block hover:opacity-80 transition-opacity"
+				>
+					<img
+						src="/svg/FDF_Skjold_Natblaa_Med_Outline_CMYK.svg"
+						alt="FDF Landsdel 4"
+						class="h-16 w-auto mb-4"
+					/>
+				</a>
+				<p class="text-star-white/50 text-sm">
+					Nyhedsnat er et arrangement i FDF Landsdel 4.
+				</p>
 			</div>
 
 			<!-- Quick links -->
-			<nav class="flex flex-wrap justify-center gap-6">
-				<a href="/" class="text-star-white/60 hover:text-gold-400 transition-colors text-sm">
-					Hjem
-				</a>
-				<a href="/page-1" class="text-star-white/60 hover:text-gold-400 transition-colors text-sm">
-					Side 1
-				</a>
-				<a href="/page-2" class="text-star-white/60 hover:text-gold-400 transition-colors text-sm">
-					Side 2
-				</a>
-				<a href="/page-3" class="text-star-white/60 hover:text-gold-400 transition-colors text-sm">
-					Side 3
-				</a>
-				<a href="/page-4" class="text-star-white/60 hover:text-gold-400 transition-colors text-sm">
-					Side 4
-				</a>
-			</nav>
+			<div>
+				<h4 class="text-star-white font-bold mb-4">Sider</h4>
+				<nav class="flex flex-col gap-2">
+					<a href="/tilmelding" class="text-star-white/60 hover:text-gold-400 transition-colors text-sm">
+						Tilmelding
+					</a>
+					<a href="/program" class="text-star-white/60 hover:text-gold-400 transition-colors text-sm">
+						Program
+					</a>
+					<a href="/praktisk" class="text-star-white/60 hover:text-gold-400 transition-colors text-sm">
+						Praktisk info
+					</a>
+					<a href="/regler" class="text-star-white/60 hover:text-gold-400 transition-colors text-sm">
+						Regler
+					</a>
+					<a href="/faq" class="text-star-white/60 hover:text-gold-400 transition-colors text-sm">
+						FAQ
+					</a>
+				</nav>
+			</div>
 
-			<!-- Copyright -->
-			<p class="text-star-white/40 text-sm">&copy; {currentYear} NyhedsNat</p>
+			<!-- Contact -->
+			<div>
+				<h4 class="text-star-white font-bold mb-4">Kontakt</h4>
+				<a
+					href="mailto:info@nyhedsnat.dk"
+					class="text-gold-400 hover:text-gold-300 transition-colors"
+				>
+					info@nyhedsnat.dk
+				</a>
+				<p class="text-star-white/50 text-sm mt-4">
+					Nyhedsnat planlægges og afvikles af et udvalg i FDF Landsdel 4.
+				</p>
+			</div>
+		</div>
+
+		<!-- Bottom bar -->
+		<div class="border-t border-gold-500/20 pt-8 flex flex-col md:flex-row items-center justify-between gap-4">
+			<p class="text-star-white/40 text-sm">&copy; {currentYear} NyhedsNat - FDF Landsdel 4</p>
+			<p class="text-star-white/30 text-xs">6.-7. november 2026</p>
 		</div>
 	</div>
 </footer>
