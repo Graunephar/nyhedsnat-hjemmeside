@@ -13,8 +13,8 @@
 		const startFlight = () => {
 			// Set random values for this flight
 			startY = Math.random() * 35 + 10; // 10-45% from top
-			direction = Math.random() > 0.3 ? 'ltr' : 'rtl';
-			duration = Math.random() * 3 + 6; // 6-9 seconds
+			direction = Math.random() > 0.5 ? 'ltr' : 'rtl'; // 50/50 chance
+			duration = Math.random() * 7 + 2; // 2-9 seconds (25% to 100% of max speed)
 
 			visible = true;
 
@@ -28,15 +28,10 @@
 		setTimeout(() => {
 			startFlight();
 
-			// Schedule next flights with random intervals
-			const scheduleNext = () => {
-				const nextDelay = Math.random() * 15000 + 20000; // 20-35 seconds
-				setTimeout(() => {
-					startFlight();
-					scheduleNext();
-				}, nextDelay);
-			};
-			scheduleNext();
+			// Schedule next flights every 2 minutes
+			setInterval(() => {
+				startFlight();
+			}, 120000);
 		}, initialDelay);
 	});
 </script>
@@ -144,18 +139,22 @@
 	.drone-container {
 		position: fixed;
 		top: var(--start-y, 20%);
-		z-index: 50;
+		z-index: 1;
 		pointer-events: none;
 	}
 
 	/* Left to right flight */
 	.drone-container.ltr {
-		animation: fly-ltr var(--duration, 8s) linear forwards;
+		animation:
+			fly-ltr var(--duration, 8s) linear forwards,
+			wobble-y var(--duration, 8s) ease-in-out forwards;
 	}
 
 	/* Right to left flight */
 	.drone-container.rtl {
-		animation: fly-rtl var(--duration, 8s) linear forwards;
+		animation:
+			fly-rtl var(--duration, 8s) linear forwards,
+			wobble-y var(--duration, 8s) ease-in-out forwards;
 	}
 
 	.drone-container.rtl .drone {
@@ -163,45 +162,80 @@
 	}
 
 	.drone {
-		width: 80px;
+		width: 40px;
 		height: auto;
-		filter: drop-shadow(0 0 8px rgba(0, 0, 0, 0.4));
+		filter: drop-shadow(0 0 4px rgba(0, 0, 0, 0.3));
+		animation: tilt 1.5s ease-in-out infinite;
 	}
 
 	@keyframes fly-ltr {
 		0% {
-			left: -120px;
+			left: -60px;
 			opacity: 0;
 		}
-		5% {
+		3% {
 			opacity: 1;
 		}
-		95% {
+		97% {
 			opacity: 1;
 		}
 		100% {
-			left: calc(100vw + 120px);
+			left: calc(100vw + 60px);
 			opacity: 0;
 		}
 	}
 
 	@keyframes fly-rtl {
 		0% {
-			right: -120px;
+			right: -60px;
 			left: auto;
 			opacity: 0;
 		}
-		5% {
+		3% {
 			opacity: 1;
 		}
-		95% {
+		97% {
 			opacity: 1;
 		}
 		100% {
-			right: calc(100vw + 120px);
+			right: calc(100vw + 60px);
 			left: auto;
 			opacity: 0;
 		}
+	}
+
+	/* Wobbly vertical movement */
+	@keyframes wobble-y {
+		0% { transform: translateY(0); }
+		10% { transform: translateY(-8px); }
+		20% { transform: translateY(12px); }
+		30% { transform: translateY(-5px); }
+		40% { transform: translateY(15px); }
+		50% { transform: translateY(-10px); }
+		60% { transform: translateY(8px); }
+		70% { transform: translateY(-12px); }
+		80% { transform: translateY(6px); }
+		90% { transform: translateY(-4px); }
+		100% { transform: translateY(10px); }
+	}
+
+	/* Slight tilt while flying */
+	@keyframes tilt {
+		0%, 100% { transform: rotate(-1deg); }
+		25% { transform: rotate(2deg); }
+		50% { transform: rotate(-2deg); }
+		75% { transform: rotate(1deg); }
+	}
+
+	.drone-container.rtl .drone {
+		animation: tilt-rtl 1.5s ease-in-out infinite;
+	}
+
+	@keyframes tilt-rtl {
+		0%, 100% { transform: scaleX(-1) rotate(-1deg); }
+		25% { transform: scaleX(-1) rotate(2deg); }
+		50% { transform: scaleX(-1) rotate(-2deg); }
+		75% { transform: scaleX(-1) rotate(1deg); }
 	}
 
 	/* Blinking green lights */

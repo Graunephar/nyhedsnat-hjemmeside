@@ -21,7 +21,7 @@
 <Drone />
 
 <!-- Main app structure -->
-<div class="min-h-screen flex flex-col">
+<div class="min-h-screen flex flex-col main-content">
 	<Navigation />
 
 	<!-- Main content with padding for fixed header -->
@@ -38,6 +38,11 @@
 </div>
 
 <style>
+	.main-content {
+		position: relative;
+		z-index: 2;
+	}
+
 	.houses-container {
 		width: 100%;
 		overflow: hidden;
