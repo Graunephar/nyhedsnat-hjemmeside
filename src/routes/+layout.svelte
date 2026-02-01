@@ -14,6 +14,9 @@
 <svelte:head>
 	<link rel="icon" href="/svg/logo.svg" type="image/svg+xml" />
 	<meta name="theme-color" content="#030712" />
+	<link rel="preconnect" href="https://fonts.googleapis.com" />
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="anonymous" />
+	<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
 </svelte:head>
 
 <!-- Animated starfield background -->
@@ -56,14 +59,14 @@
 <style>
 	.moon-container {
 		position: absolute;
-		top: 200px;
-		right: 50px;
+		top: 110px;
+		right: 25px;
 		z-index: 1;
 		pointer-events: none;
 	}
 
 	.moon {
-		width: 120px;
+		width: 60px;
 		height: auto;
 		position: relative;
 		z-index: 1;
@@ -74,8 +77,8 @@
 		top: 50%;
 		left: 50%;
 		transform: translate(-50%, -50%);
-		width: 200px;
-		height: 200px;
+		width: 100px;
+		height: 100px;
 		border-radius: 50%;
 		background: radial-gradient(
 			circle,
@@ -87,6 +90,22 @@
 		);
 		filter: blur(30px);
 		animation: moon-pulse 8s ease-in-out infinite;
+	}
+
+	@media (min-width: 768px) {
+		.moon-container {
+			top: 200px;
+			right: 50px;
+		}
+
+		.moon {
+			width: 120px;
+		}
+
+		.moon-glow {
+			width: 200px;
+			height: 200px;
+		}
 	}
 
 	@keyframes moon-pulse {

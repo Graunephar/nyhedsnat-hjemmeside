@@ -26,7 +26,7 @@ body {
 	background: linear-gradient(180deg, #030712 0%, #0a0e1a 50%, #111827 100%);
 	min-height: 100vh;
 	color: #f8fafc;
-	font-family: system-ui, -apple-system, sans-serif;
+	font-family: 'Inter', system-ui, -apple-system, sans-serif;
 }
 
 /* Animated starfield background */
