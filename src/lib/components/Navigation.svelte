@@ -4,8 +4,8 @@
 	let mobileMenuOpen = $state(false);
 
 	const navLinks = [
-		{ href: '/', label: 'Hjem' },
 		{ href: '/tilmelding', label: 'Tilmelding' },
+		{ href: '/indbydelse', label: 'Indbydelse' },
 		{ href: '/program', label: 'Program' },
 		{ href: '/praktisk', label: 'Praktisk' },
 		{ href: '/regler', label: 'Regler' },

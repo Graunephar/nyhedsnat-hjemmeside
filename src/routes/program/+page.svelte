@@ -26,6 +26,7 @@
 					{ time: '19:00–20:00', title: 'Deltagerankomst', icon: '🚗' },
 					{ time: '20:00', title: 'Fælles intro', icon: '👋' },
 					{ time: '20:30–01:00', title: 'Events', icon: '⚡' },
+					{ time: '01:00', title: 'Natmad', icon: '🍕' },
 					{ time: '07:00', title: 'Deadline for aflevering af aviser', icon: '📰' },
 					{ time: '09:00', title: 'Morgenmad', icon: '🥐' },
 					{ time: '10:00', title: 'Kåring af vindere', icon: '🏆' },

@@ -1,5 +1,42 @@
 <script lang="ts">
 	const faqs = [
+				{
+			question: 'Hvem planlægger?',
+			answer: `Nyhedsnat planlægges og afvikles af et landsdelsudvalg, som står for selve arrangementet. Udvalget sætter rammerne og deltager aktivt i planlægningen.
+
+Derudover arbejder vi på at samle en gruppe seniorer, som er med til at planlægge events på forhånd. Planlægningen foregår sammen med udvalget, som faciliterer processen og sikrer overblik og sammenhæng. Det giver mulighed for at tage ansvar, tænke og prøve kræfter med planlægning i praksis. En slags lederuddannelse i forklædning.
+
+De seniorer, der tilmelder sig og møder op på dagen, er med til at afvikle events, få roller og skabe oplevelser for deltagerne. Alle bidrager, men på forskellige niveauer af ansvar.
+
+Har du som senior lyst til at være med i planlægningen på forhånd, så hører vi meget gerne fra dig via info@nyhedsnat.dk`
+		},
+				{
+			question: 'Hvordan deltager man som væbner eller seniorvæbner?',
+			answer: `Væbnere og seniorvæbnere deltager i Nyhedsnat som en del af en redaktion.
+
+En redaktion:
+• Består af 4-6 deltagere
+• Har minimum én leder
+• Har base i fælles hal sammen med de andre redaktioner
+
+Som redaktion oplever man events, stiller spørgsmål og arbejder sammen om at lave en avis frem mod deadline næste morgen. Kun halvdelen af redaktionen er ude ad gangen, mens resten arbejder videre hjemme på basen.
+
+Kredse kan slå sig sammen, hvis man ikke selv har deltagere nok til en hel redaktion.`
+		},
+		{
+			question: 'Hvordan deltager man som senior?',
+			answer: `Seniorer deltager i Nyhedsnat ved at skabe og spille de events, som redaktionerne skal opleve og dække.
+
+Nogle seniorer udvælges på forhånd til at planlægge events. Andre seniorer får på dagen tildelt roller og indgår i afviklingen.
+
+Som senior:
+• Spiller man forskellige roller
+• Er man med til at skabe oplevelser for de yngre deltagere
+
+Det er samtidig en form for basal lederuddannelse i forklædning. Seniorerne planlægger, afvikler, improviserer og tager ansvar, mens de leger sig igennem det hele.
+
+Seniorerne har typisk base i et kredshus i nærheden og indgår i et fælles team, hvor roller og opgaver fordeles undervejs.`
+		},
 		{
 			question: 'Skal man være god til at skrive for at deltage?',
 			answer: `Nej. Aviserne kan bestå af mange forskellige typer indhold.
