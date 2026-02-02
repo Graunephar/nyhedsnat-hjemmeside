@@ -2,64 +2,79 @@
 <svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 655.03 198.5">
   <defs>
     <style>
-      .cls-1, .cls-2, .cls-3, .cls-4, .cls-5, .cls-6, .cls-7, .cls-8, .cls-9, .cls-10, .cls-11 {
-        isolation: isolate;
+      .cls-1 {
+        mask: url(#mask);
       }
 
-      .cls-1, .cls-2, .cls-12 {
-        fill: #ff3b3b;
-      }
-
-      .cls-1, .cls-3 {
-        opacity: .5;
-      }
-
-      .cls-2, .cls-4, .cls-7, .cls-9, .cls-10, .cls-11 {
-        opacity: .55;
-      }
-
-      .cls-13 {
-        fill: #10131c;
-      }
-
-      .cls-14, .cls-8, .cls-15 {
-        fill: #0a0d14;
+      .cls-2 {
+        filter: url(#luminosity-noclip);
       }
 
       .cls-3 {
+        fill: #3a3b3f;
+      }
+
+      .cls-4, .cls-5, .cls-6, .cls-7, .cls-8, .cls-9, .cls-10, .cls-11, .cls-12, .cls-13 {
+        isolation: isolate;
+      }
+
+      .cls-4, .cls-7, .cls-11, .cls-12, .cls-13 {
+        opacity: .55;
+      }
+
+      .cls-5, .cls-6 {
+        opacity: .5;
+      }
+
+      .cls-14, .cls-9, .cls-15 {
+        fill: #0a0d14;
+      }
+
+      .cls-6 {
         fill: #6b7686;
       }
 
-      .cls-4 {
+      .cls-7 {
         fill: url(#radial-gradient);
       }
 
       .cls-16 {
-        fill: #10151c;
+        filter: url(#luminosity-noclip-3);
       }
 
       .cls-17 {
-        fill: #7ca4b6;
+        filter: url(#luminosity-noclip-2);
       }
 
-      .cls-5 {
-        fill: #e6edf3;
-        opacity: .9;
-      }
-
-      .cls-7, .cls-18 {
-        fill: #fff2b0;
+      .cls-18 {
+        fill: #ff3b3b;
       }
 
       .cls-19 {
-        fill: #2a3440;
+        fill: #10151c;
       }
 
       .cls-20 {
+        fill: #7ca4b6;
+      }
+
+      .cls-21 {
+        mask: url(#mask-2);
+      }
+
+      .cls-22 {
+        mask: url(#mask-1);
+      }
+
+      .cls-23 {
+        fill: #2a3440;
+      }
+
+      .cls-24 {
         fill: #1b222c;
       }
 
-      .cls-8 {
+      .cls-9 {
         opacity: .6;
       }
 
@@ -69,23 +84,54 @@
         stroke-width: 2.2px;
       }
 
-      .cls-9 {
-        fill: url(#radial-gradient-2);
+      .cls-25 {
+        fill: #292e3a;
       }
 
       .cls-10 {
-        fill: url(#radial-gradient-3);
+        fill: #4d5052;
+        opacity: .9;
+      }
+
+      .cls-26 {
+        fill: #fff2b0;
       }
 
       .cls-11 {
+        fill: url(#radial-gradient-2);
+      }
+
+      .cls-12 {
+        fill: url(#radial-gradient-3);
+      }
+
+      .cls-13 {
         fill: url(#radial-gradient-4);
       }
     </style>
-    <radialGradient id="radial-gradient" cx="-30.74" cy="802.18" fx="-30.74" fy="802.18" r=".52" gradientTransform="translate(9509.11 -49010.45) scale(302.3 61.28)" gradientUnits="userSpaceOnUse">
+    <radialGradient id="radial-gradient" cx="-30.79" cy="802.17" fx="-30.79" fy="802.17" r=".52" gradientTransform="translate(9509.1 -49009.99) scale(302.3 61.28)" gradientUnits="userSpaceOnUse">
       <stop offset="0" stop-color="#ffe88a" stop-opacity=".9"/>
       <stop offset=".4" stop-color="#ffe88a" stop-opacity=".3"/>
       <stop offset="1" stop-color="#ffe88a" stop-opacity="0"/>
     </radialGradient>
+    <filter id="luminosity-noclip" x="336.55" y="125.68" width="32" height="27" color-interpolation-filters="sRGB" filterUnits="userSpaceOnUse">
+      <feFlood flood-color="#fff" result="bg"/>
+      <feBlend in="SourceGraphic" in2="bg"/>
+    </filter>
+    <mask id="mask" x="336.55" y="125.68" width="32" height="27" maskUnits="userSpaceOnUse">
+      <g class="cls-2">
+        <image width="32" height="27" transform="translate(336.55 125.68)" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACEAAAAcCAYAAADvANYcAAAACXBIWXMAAAsSAAALEgHS3X78AAADiElEQVRIic2XaY+iQBCGX24QsMUrOjH+/z9mMo7DTXPYHPupK6A4md3sZoekEmjp5unqqrdK4AdcCoDhfzOo/xkAAKB/5yXf9+F5HkzThKZpUFUViqLQ78MwYBgGtG0LIQSKokCWZX8Hwvd9BEGAzWYD3/fhOA4Mw4Cu69A0jUC6rkPXdRBCoK5rZFmGKIqQJAniOP5ziCAIcDqdsN1usV6v4fs+XNeFZVkwDAOqqkJVVYJo2xZN06AsSxRFgSRJEIYhbrcboihCnue/B7HZbHA+n3E8HrHb7bBer8EYg+u6sG2bjmXsibZtUdc1yrJEnudI0xSMMSyXS/i+j8vl8tIrTxDr9Rrn8xmn0wmHwwH7/R5BEIAxBs/zCELXdaiqSrEwhiiKAr7vY7FYwLZtGIYBRVEwDAOSJPkaYrVa4XQ64e3tDYfDAcfjkY5juVzC8zw4jgPLsihAh2FA13W43+9omgZVVSHLsonHAKDvewghIIQA53wewnEc7Pd77Pd77HY7bLdbsiAIyK22bT9B9H1PEJxzmKY52b2E5Jwjz/PXEJ7ngTGG1WpFxhijMemJr2KiaRrKnsdY4ZyDMYYgCJCmKYqieIYwDAOO42CxWMDzvIm5rgvP8+iMxxBjjRiPCSFwv99RVRVc14XrupRhi8ViHkLTNBiGAdM0YVkWuf3x3rIs6Lo+ESsAlK5936NtWziOg7IsYdv27PzJ3PEimqaREEkzDIPuH0XqEeJxvrzXdX2yjgR+ghiG+TrW9/3s+N+8JhAykKRJOX4cmwPu+57eHc97HOu67mljdDhS+5umIavrmmyc84/ZIQHquqZ5VVU9rSGfhRDzEEIIVFVFilcUBcm0rBVSE2QmvKodnHNwzmkd+Sw1oizLeYiiKJCmKZIkmSijjGT58fv9TmI0zoixWMkC9speilVVVfj4+KB0ehQdeVSO43wJUZYlsixDmqYIw5Ds8/MTcRwjTdOneJokbJIklGpj0ZGFiXNOEKZpTmqHhBx7Qn78er3ier3i/f19IlKzEAAQRdFE8+Xu8jwn1ZTH9BgnVVVRAUvTFFEU4Xa74Xa74XK5zFbQWQgACMOQql6e54jjGIwx6q5kdshsmWtq4jgmT4Rh+GVT82W37bouFa4gCKiKyngZp6gM2nF7F8fxy92PGb7d8ktPSPlVFIUg5JHIkv2bje73If7h9TP+d/wIiF+tEvO03uYv/gAAAABJRU5ErkJggg=="/>
+      </g>
+    </mask>
+    <filter id="luminosity-noclip-2" x="173.55" y="126.68" width="36" height="27" color-interpolation-filters="sRGB" filterUnits="userSpaceOnUse">
+      <feFlood flood-color="#fff" result="bg"/>
+      <feBlend in="SourceGraphic" in2="bg"/>
+    </filter>
+    <mask id="mask-1" x="173.55" y="126.68" width="36" height="27" maskUnits="userSpaceOnUse">
+      <g class="cls-17">
+        <image width="36" height="27" transform="translate(173.55 126.68)" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACUAAAAcCAYAAADm63ZmAAAACXBIWXMAAAsSAAALEgHS3X78AAAD3ElEQVRYhc2X6Y6jSgyFT9i3CpCtO1H3+z9Zb4kgQIq1AsyPkUuQhU7rXs2MJQsFFZUP+9gugH/QZgD6vw1xYTPlbxPcMu3RhfP5HIwx6LoOTdOgKApms9loTd/36LoO5/MZQghwzpGm6f8PFYYhwjDEcrkEYwy2bUPXdei6PgIjICEEhBCoqgpZliGKIiRJgjiOH4a6q6n5fI7FYoHNZoPlcokgCDCfz2HbNkzThK7rUFUVivJbAV3Xoes6NE2DpmlQliWyLEOSJIiiCPv9HlEUIcuyb5luRioMQ7y8vGCz2WC9Xksoz/Pgui5M04RhGFdQbdtCCIG6rpHnuUwfvRBjDG9vb4iiaJLqCioIAry+vmK32+H5+Rmr1eoqUpZlwTAMaJo2Sl/btmiaBlVVoSxLnE4nMMbgOI58RlVV9H0/mc4RlOd52O122G632G63eHp6kpHyfV9Cka5uQZGeiqKA53mjl1BVVUa173scj8fvoYIgwGq1kr5er2WkfN8fvfUtTbVti/P5jKqqRusIfliZdV2jaRrkeX4fynVdLBYL+L6PIAikh2GIIAjg+z48z4PjODBNE5qmXUXqfD6jbVuYpinXKIoiK5NSWxSFLIJJKBKx53nwPA+MMTDG5G9yy7JgmiZUVcVsNhtB6bqOtm2hquooVUIINE0Dxhg453J/y7Km06dpGkzThGVZUgeXPozAZeMkwGHvIuEP97RtG47jwLZtKYeiKEZ7yTGjKIpMyZRThKZMVVW5lhqtpmnyqmkaDMOArus3oyWhbr35rfs/sXt7Ar/Tfc+U4SLqym3b3vWu676FoSojp6oUQsh7NI7qur56XmqKHqQxUdf1lVMbAHAzjcP5R/tQI62qSjr95pxPV58QAkVRoCgKcM7BOYfrurBtW3ZvKm/DMGAYxt2BTDD0p+S0b1EUyPMcVVXdjLSE4pzL3kH9aAhEaRFCXDVFghp2dBoztOfxeESapsiyTF5Pp9M0VFmW2O/3svypOuhPhxoYjg1KJ2mOoPI8l1BxHCOKoivnnE9DAUCSJFAURY4PRVFGnZjGh+M4VwN5OELKspRQaZpKiP1+j4+PDxwOh8nD39UpIY5j2QgJqCxLlGUpdTaEotk3LBSCotTFcYzD4YCvry98fn4ijuObAr8LBQBRFMlZRjBZlskzER30LiNF6b2Eoki9v7/jcDjchSGb/JphjGGxWGC1WiEMQzkPp9I3FPnpdJKRIqE/YLOHPrGCIABjDK7rwvd9uK47Onn2fS8jS8eRNE1HuvqBPQY1NDrCXM7BYUsoigJJkvxk2/8G9Qfs3/wY/QWoIB4z4NDP2AAAAABJRU5ErkJggg=="/>
+      </g>
+    </mask>
     <radialGradient id="radial-gradient-2" cx="-30.02" cy="801.16" fx="-30.02" fy="801.16" r=".64" gradientTransform="translate(61561.8 4139.52) rotate(90) scale(132.98 76.18)" gradientUnits="userSpaceOnUse">
       <stop offset="0" stop-color="#fff5cd" stop-opacity=".9"/>
       <stop offset=".4" stop-color="#fff5cd" stop-opacity=".3"/>
@@ -93,23 +139,63 @@
     </radialGradient>
     <radialGradient id="radial-gradient-3" cx="-30.01" cy="799.96" fx="-30.01" fy="799.96" gradientTransform="translate(58464.5 4137.48) rotate(90) scale(132.98 72.34)" xlink:href="#radial-gradient-2"/>
     <radialGradient id="radial-gradient-4" cx="-30.07" cy="802.32" fx="-30.07" fy="802.32" gradientTransform="translate(62037.11 4141.66) rotate(90) scale(132.98 76.75)" xlink:href="#radial-gradient-2"/>
+    <filter id="luminosity-noclip-3" x="617.82" y="123.78" width="29" height="29" color-interpolation-filters="sRGB" filterUnits="userSpaceOnUse">
+      <feFlood flood-color="#fff" result="bg"/>
+      <feBlend in="SourceGraphic" in2="bg"/>
+    </filter>
+    <mask id="mask-2" x="617.82" y="123.78" width="29" height="29" maskUnits="userSpaceOnUse">
+      <g class="cls-16">
+        <image width="29" height="29" transform="translate(617.82 123.78)" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAACXBIWXMAAAsSAAALEgHS3X78AAADYUlEQVRIicWXaW/rKhCGX+8LRl5Sq+3//2+RGsV4xfGCzf1wBLJTJ22PzlWRECQCnszAvDMBfqkZAORvcM1fgAIA7O8siqIIhBA4jgPLsmAYBgBgXVes64ppmsA5B+f834AppUiSBFmWgRAC3/dh2zZM84+jlmWBEAK32w2cc1RVhbIs0XXd34HDMESSJMjzHGmaIo5jRFEE3/fhuu4OPI4jhmFA13UoyxKUUpzPZ1RV9TNwGIZ4f39Hnud4eXlBlmVIkgSEEARBoN0tpcSyLJimCX3fg3MOSqm+EtM0wRj7PlhZ+vb2hjzPcTqdEMcxKKXaYsuyAADzPGOaJtxuN7RtiyAIdh6RUqIsy6/BlFJtaZ7neH191RZTSvXBW4vHcUTf9wjDEJ7n6R+1rivmecY8z4d3vgMnSYI0TZFlGU6nkx7TNEUURQiCQB+uwMMwfIKqK+i6DnVdPwdHUYQsyxDHMZIk0WOapocWA4AQAuM4wvf9HVR5oWkaNE1zCNdgQggIITpmKaWglCKKIj2GYfjJ1feWKuh2HyHkMdhxHPi+D9/3EQSBHlUPw1BbbNt/ts3z/Mnt2/XqPMdxHrvasizYtg3XdeE4DlzXheu68DxPz9VnZaF6vUKI3Rp1hud5Ovwegg3DgGmaME0TlmUddtu2d5K5/U7NlbJZlgXTNGEYhl6/bYdJQkqpx+38p+3ZXm3xuq5YlkX3eZ71XAihv1PWANitE0LouBVC6L4sC9Z1fQ5W4TFNE6Zp0jo8juPubrePS63b7lGj2j/P82Owkr5hGND3PW63m1YkFadSSgghDsOHc46+7/X8vj8EqwVd14FzjrZtDxXpXkBULm7bVguGEo26rsEYQ9u2z8EqnyqVuocOw/ApjlV2apoGjDGUZYmyLFFVFRhjD9PjTqsVlBCys0y59EhAtvJYliWu1yuKokBRFLher6jr+mtw13U4n886n97f433a27pagYuiwMfHBy6Xy8/ycVVV+mBVTyntDcNwp0QqCjjnqOsaVVWhKApcLhecz+enJdBh6cMYg5RS59KmaXQh4HkeTNPUL3wLZozher2CMfZl3fW0ro6iCHEcI8syXXM5jqMlUD04zrl+SI/u9J77rYL+qLyVUuoqQ4XTD9r3wP9D+71/Er8G/g/ZO7HPQjIAZAAAAABJRU5ErkJggg=="/>
+      </g>
+    </mask>
   </defs>
-  <ellipse class="cls-4" cx="124.13" cy="143.2" rx="92.17" ry="18.68" transform="translate(-4.34 3.88) rotate(-1.76)"/>
+  <ellipse class="cls-7" cx="109.13" cy="143.2" rx="92.17" ry="18.68" transform="translate(-4.35 3.42) rotate(-1.76)"/>
+  <g>
+    <path class="cls-24" d="M341.82,140.46l-158.88,2.04,9.47-14.56c12.2-16.95,30.49-27.26,54.88-27.26h48.79c33.54,0,57.23,21.33,63.33,43.43,2.44-1.47-4.18-3.64-17.59-3.64Z"/>
+    <path class="cls-19" d="M362.56,146.56c0,3.66-2.44,6.1-8.54,6.1h-164.65c-6.1,0-9.15-2.44-9.15-6.1,0-2.44,3.05-6.1,9.15-6.1h158.56c9.76,0,14.64,2.44,14.64,6.1Z"/>
+    <path class="cls-10" d="M319.87,117.29c2.44,6.27,1.22,10.97-2.44,10.97l-101.87-.33c6.1-12.54,16.27-20.27,28.47-20.27l67.31.22c3.66,0,6.1,3.14,8.54,9.41Z"/>
+    <path class="cls-9" d="M291.82,108.9v19.23c0,.76-.82,1.37-1.83,1.37h0c-1.01,0-1.83-.62-1.83-1.37v-19.23c0-.76.82-1.37,1.83-1.37h0c1.01,0,1.83.62,1.83,1.37Z"/>
+    <path class="cls-9" d="M261,109.13v19.23c0,.76-.82,1.37-1.83,1.37h0c-1.01,0-1.83-.62-1.83-1.37v-19.23c0-.76.82-1.37,1.83-1.37h0c1.01,0,1.83.62,1.83,1.37Z"/>
+    <g>
+      <g>
+        <circle class="cls-14" cx="311.33" cy="157.53" r="15.86"/>
+        <circle class="cls-23" cx="311.33" cy="157.53" r="10.98"/>
+        <circle class="cls-6" cx="311.33" cy="157.53" r="3.66"/>
+      </g>
+      <g>
+        <circle class="cls-14" cx="225.96" cy="157.53" r="15.86"/>
+        <circle class="cls-23" cx="225.96" cy="157.53" r="10.98"/>
+        <circle class="cls-6" cx="225.96" cy="157.53" r="3.66"/>
+      </g>
+    </g>
+    <ellipse class="cls-18" cx="351.6" cy="140.19" rx="7.76" ry="3.66"/>
+    <g class="cls-5">
+      <g class="cls-1">
+        <ellipse class="cls-18" cx="352.55" cy="139.49" rx="13.77" ry="10.98"/>
+      </g>
+    </g>
+    <ellipse class="cls-26" cx="190.76" cy="140.3" rx="6.75" ry="3.66"/>
+    <g class="cls-4">
+      <g class="cls-22">
+        <ellipse class="cls-26" cx="191.6" cy="140.16" rx="15.07" ry="11.24"/>
+      </g>
+    </g>
+  </g>
   <g>
     <g>
-      <rect class="cls-17" x="416.61" y="30.55" width="211.35" height="105.09" rx=".8" ry=".8" transform="translate(1044.58 166.19) rotate(-180)"/>
-      <g class="cls-6">
+      <rect class="cls-20" x="416.61" y="30.55" width="211.35" height="105.09" rx=".8" ry=".8" transform="translate(1044.58 166.19) rotate(-180)"/>
+      <g class="cls-8">
         <path d="M445.95,65.61h-4.39l-8.55-14.03v14.03h-4.39v-21.33h4.39l8.57,14.06v-14.06h4.38v21.33Z"/>
         <path d="M458.34,53.89l4.44-9.61h4.8l-7,13.59v7.73h-4.47v-7.73l-7-13.59h4.82l4.41,9.61Z"/>
         <path d="M488.09,65.61h-4.39v-9.14h-8.57v9.14h-4.39v-21.33h4.39v8.64h8.57v-8.64h4.39v21.33Z"/>
         <path d="M505.96,56.37h-8.44v5.71h9.9v3.53h-14.3v-21.33h14.27v3.56h-9.87v5.08h8.44v3.44Z"/>
         <path d="M511.21,65.61v-21.33h6.56c1.88,0,3.55.42,5.03,1.27,1.48.84,2.63,2.05,3.46,3.6s1.25,3.33,1.25,5.31v.98c0,1.98-.41,3.75-1.22,5.29s-1.96,2.74-3.45,3.59-3.16,1.28-5.02,1.29h-6.61ZM515.6,47.84v14.24h2.12c1.72,0,3.03-.56,3.94-1.68s1.37-2.73,1.39-4.82v-1.13c0-2.17-.45-3.81-1.35-4.93s-2.21-1.68-3.94-1.68h-2.17Z"/>
-        <path d="M542.96,60.02c0-.83-.29-1.47-.88-1.91s-1.64-.91-3.16-1.41-2.73-.98-3.62-1.46c-2.42-1.31-3.63-3.07-3.63-5.29,0-1.15.32-2.18.97-3.08.65-.9,1.58-1.61,2.8-2.12,1.22-.51,2.58-.76,4.09-.76s2.88.28,4.07.83,2.12,1.33,2.78,2.34c.66,1.01.99,2.15.99,3.43h-4.39c0-.98-.31-1.74-.92-2.28s-1.48-.81-2.59-.81-1.91.23-2.5.68-.89,1.05-.89,1.79c0,.69.35,1.27,1.05,1.74s1.73.91,3.08,1.32c2.5.75,4.32,1.68,5.46,2.8s1.71,2.5,1.71,4.16c0,1.85-.7,3.29-2.09,4.34s-3.28,1.57-5.64,1.57c-1.64,0-3.13-.3-4.48-.9s-2.38-1.42-3.08-2.47-1.06-2.26-1.06-3.63h4.41c0,2.35,1.41,3.53,4.22,3.53,1.04,0,1.86-.21,2.45-.64s.88-1.02.88-1.78Z"/>
+        <path d="M542.96,60.02c0-.83-.29-1.47-.88-1.91s-1.64-.91-3.16-1.41-2.73-.98-3.62-1.46c-2.42-1.31-3.63-3.07-3.63-5.29,0-1.15.32-2.18.97-3.08.65-.9,1.58-1.61,2.8-2.12,1.22-.51,2.58-.76,4.09-.76s2.88.28,4.07.83,2.12,1.33,2.78,2.34c.66,1.01.99,2.15.99,3.43h-4.39c0-.98-.31-1.74-.92-2.28s-1.48-.81-2.59-.81-1.91.23-2.5.68-.89,1.05-.89,1.79c0,.69.35,1.27,1.05,1.74s1.73.91,3.08,1.32c2.5.75,4.32,1.68,5.46,2.8s1.71,2.5,1.71,4.16c0,1.85-.7,3.29-2.09,4.34s-3.28,1.57-5.64,1.57c-1.64,0-3.13-.3-4.48-.9-1.35-.6-2.38-1.42-3.08-2.47s-1.06-2.26-1.06-3.63h4.41c0,2.35,1.41,3.53,4.22,3.53,1.04,0,1.86-.21,2.45-.64s.88-1.02.88-1.78Z"/>
         <path d="M568.89,65.61h-4.39l-8.55-14.03v14.03h-4.39v-21.33h4.39l8.57,14.06v-14.06h4.38v21.33Z"/>
         <path d="M585.97,61.22h-7.71l-1.46,4.39h-4.67l7.94-21.33h4.07l7.98,21.33h-4.67l-1.48-4.39ZM579.45,57.66h5.33l-2.68-7.98-2.65,7.98Z"/>
         <path d="M609.61,47.84h-6.53v17.77h-4.39v-17.77h-6.45v-3.56h17.37v3.56Z"/>
       </g>
-      <g class="cls-6">
+      <g class="cls-8">
         <path d="M429,82.64h7.26v1.46h-5.52v4.48h5.1v1.44h-5.1v6.1h-1.74v-13.48Z"/>
         <path d="M439.54,82.82c1.06-.16,2.32-.28,3.7-.28,2.5,0,4.28.58,5.46,1.68,1.2,1.1,1.9,2.66,1.9,4.84s-.68,4-1.94,5.24c-1.26,1.26-3.34,1.94-5.96,1.94-1.24,0-2.28-.06-3.16-.16v-13.26ZM441.28,94.74c.44.08,1.08.1,1.76.1,3.72,0,5.74-2.08,5.74-5.72.02-3.18-1.78-5.2-5.46-5.2-.9,0-1.58.08-2.04.18v10.64Z"/>
         <path d="M453.66,82.64h7.26v1.46h-5.52v4.48h5.1v1.44h-5.1v6.1h-1.74v-13.48Z"/>
@@ -126,35 +212,16 @@
     </g>
     <circle class="cls-14" cx="535.12" cy="154.66" r="18.76"/>
   </g>
-  <path class="cls-15" d="M367.24,137.37h37.61"/>
-  <g>
-    <path class="cls-20" d="M346.9,139.24h-158.56s9.15-12.53,9.15-12.53c12.2-16.95,30.49-27.26,54.88-27.26h48.79c33.54,0,57.93,16.21,64.03,38.31,2.44-1.47-4.88,1.47-18.29,1.47Z"/>
-    <path class="cls-16" d="M367.64,145.34c0,3.66-2.44,6.1-8.54,6.1h-164.65c-6.1,0-9.15-2.44-9.15-6.1,0-2.44,3.05-6.1,9.15-6.1h158.56c9.76,0,14.64,2.44,14.64,6.1Z"/>
-    <path class="cls-5" d="M324.95,116.07c2.44,6.27,1.22,10.97-2.44,10.97h-88.43c6.1-12.54,18.29-20.38,30.49-20.38h51.84c3.66,0,6.1,3.14,8.54,9.41Z"/>
-    <path class="cls-8" d="M296.9,107.69v19.23c0,.76-.82,1.37-1.83,1.37h0c-1.01,0-1.83-.62-1.83-1.37v-19.23c0-.76.82-1.37,1.83-1.37h0c1.01,0,1.83.62,1.83,1.37Z"/>
-    <path class="cls-8" d="M278.6,107.69v19.23c0,.76-.82,1.37-1.83,1.37h0c-1.01,0-1.83-.62-1.83-1.37v-19.23c0-.76.82-1.37,1.83-1.37h0c1.01,0,1.83.62,1.83,1.37Z"/>
-    <g>
-      <g>
-        <circle class="cls-14" cx="316.41" cy="156.32" r="15.86"/>
-        <circle class="cls-19" cx="316.41" cy="156.32" r="10.98"/>
-        <circle class="cls-3" cx="316.41" cy="156.32" r="3.66"/>
-      </g>
-      <g>
-        <circle class="cls-14" cx="231.04" cy="156.32" r="15.86"/>
-        <circle class="cls-19" cx="231.04" cy="156.32" r="10.98"/>
-        <circle class="cls-3" cx="231.04" cy="156.32" r="3.66"/>
-      </g>
+  <path class="cls-15" d="M362.24,147.37h37.61"/>
+  <ellipse class="cls-11" cx="528.94" cy="96.98" rx="28.89" ry="50.42" transform="translate(-2.73 16.3) rotate(-1.76)"/>
+  <ellipse class="cls-12" cx="595.22" cy="96.84" rx="27.43" ry="50.42" transform="translate(-2.69 18.33) rotate(-1.76)"/>
+  <ellipse class="cls-13" cx="459.35" cy="93.08" rx="29.1" ry="50.42" transform="translate(-2.64 14.16) rotate(-1.76)"/>
+  <circle class="cls-25" cx="535.12" cy="154.66" r="11.36"/>
+  <path class="cls-3" d="M638.77,149.72h-241.91s13.08-17.28,13.08-17.28h222.29s6.54,17.28,6.54,17.28Z"/>
+  <circle class="cls-18" cx="632.52" cy="137.49" r="3.95"/>
+  <g class="cls-4">
+    <g class="cls-21">
+      <circle class="cls-18" cx="632.61" cy="138.43" r="11.85"/>
     </g>
-    <circle class="cls-12" cx="351.78" cy="136.81" r="3.66"/>
-    <circle class="cls-1" cx="351.78" cy="136.81" r="10.98"/>
-    <circle class="cls-18" cx="188.35" cy="136.81" r="3.66"/>
-    <circle class="cls-7" cx="188.35" cy="136.81" r="7.43"/>
   </g>
-  <ellipse class="cls-9" cx="528.94" cy="96.98" rx="28.89" ry="50.42" transform="translate(-2.73 16.3) rotate(-1.76)"/>
-  <ellipse class="cls-10" cx="595.22" cy="96.84" rx="27.43" ry="50.42" transform="translate(-2.69 18.33) rotate(-1.76)"/>
-  <ellipse class="cls-11" cx="459.35" cy="93.08" rx="29.1" ry="50.42" transform="translate(-2.64 14.16) rotate(-1.76)"/>
-  <path class="cls-13" d="M638.77,149.72h-241.91s13.08-17.28,13.08-17.28h222.29s6.54,17.28,6.54,17.28Z"/>
-  <circle class="cls-13" cx="535.12" cy="154.66" r="11.36"/>
-  <circle class="cls-2" cx="632.52" cy="138.05" r="11.85"/>
-  <circle class="cls-12" cx="632.52" cy="137.49" r="3.95"/>
 </svg>

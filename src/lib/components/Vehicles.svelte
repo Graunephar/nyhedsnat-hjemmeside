@@ -33,22 +33,22 @@
 	// - weight: spawn probability (higher = more common)
 	// - direction: 'ltr', 'rtl', or 'both' (default: 'both' if omitted)
 	const vehicleTypes: VehicleType[] = [
-		{ src: '/svg/eastereggs/vehicles/car-1.svg', size: 'car', minDuration: 8, maxDuration: 14, weight: 10 },
-		{ src: '/svg/eastereggs/vehicles/car-2.svg', size: 'car', minDuration: 9, maxDuration: 15, weight: 10 },
-		{ src: '/svg/eastereggs/vehicles/car-3.svg', size: 'car', minDuration: 9, maxDuration: 15, weight: 10 },
-		{ src: '/svg/eastereggs/vehicles/car-4.svg', size: 'car', minDuration: 9, maxDuration: 15, weight: 10 },
-		{ src: '/svg/eastereggs/vehicles/car-5.svg', size: 'car', minDuration: 9, maxDuration: 15, weight: 10 },
-		{ src: '/svg/eastereggs/vehicles/4x4.svg', size: 'car', minDuration: 12, maxDuration: 18, weight: 8 },
-		{ src: '/svg/eastereggs/vehicles/random-short-car.svg', size: 'car', minDuration: 7, maxDuration: 12, weight: 8 },
-		{ src: '/svg/eastereggs/vehicles/truck.svg', size: 'large', minDuration: 18, maxDuration: 28, weight: 5 },
-		{ src: '/svg/eastereggs/vehicles/moped.svg', size: 'small', minDuration: 16, maxDuration: 24, weight: 6 },
-		{ src: '/svg/eastereggs/vehicles/e-scooter.svg', size: 'small', minDuration: 20, maxDuration: 30, weight: 6 },
+		{ src: '/svg/eastereggs/vehicles/car-1.svg', size: 'car', minDuration: 8, maxDuration: 14, weight: 3 },
+		{ src: '/svg/eastereggs/vehicles/car-2.svg', size: 'car', minDuration: 9, maxDuration: 15, weight: 3 },
+		{ src: '/svg/eastereggs/vehicles/car-3.svg', size: 'car', minDuration: 9, maxDuration: 15, weight: 3 },
+		{ src: '/svg/eastereggs/vehicles/car-4.svg', size: 'car', minDuration: 9, maxDuration: 15, weight: 3 },
+		{ src: '/svg/eastereggs/vehicles/car-5.svg', size: 'car', minDuration: 9, maxDuration: 15, weight: 3 },
+		{ src: '/svg/eastereggs/vehicles/4x4.svg', size: 'car', minDuration: 12, maxDuration: 18, weight: 2 },
+		{ src: '/svg/eastereggs/vehicles/random-short-car.svg', size: 'car', minDuration: 7, maxDuration: 12, weight: 2 },
+		{ src: '/svg/eastereggs/vehicles/truck.svg', size: 'large', minDuration: 18, maxDuration: 28, weight: 3 },
+		{ src: '/svg/eastereggs/vehicles/moped.svg', size: 'small', minDuration: 16, maxDuration: 24, weight: 3 },
+		{ src: '/svg/eastereggs/vehicles/e-scooter.svg', size: 'small', minDuration: 20, maxDuration: 30, weight: 3 },
 		// Rare vehicles
-		{ src: '/svg/eastereggs/vehicles/nyhedsnat-car-rtl.svg', size: 'large', minDuration: 9, maxDuration: 14, weight: 3, direction: 'rtl' }, //because this has text it needs to exist in two types one for each direction it can drive 
-		{ src: '/svg/eastereggs/vehicles/nyhedsnat-car-ltr.svg', size: 'large', minDuration: 9, maxDuration: 14, weight: 3, direction: 'ltr' },
+		{ src: '/svg/eastereggs/vehicles/nyhedsnat-car-rtl.svg', size: 'large', minDuration: 9, maxDuration: 14, weight: 4, direction: 'rtl' }, //because this has text it needs to exist in two types one for each direction it can drive 
+		{ src: '/svg/eastereggs/vehicles/nyhedsnat-car-ltr.svg', size: 'large', minDuration: 9, maxDuration: 14, weight: 4, direction: 'ltr' },
 		{ src: '/svg/eastereggs/vehicles/dino-car.svg', size: 'car', minDuration: 11, maxDuration: 17, weight: 2 },
-		{ src: '/svg/eastereggs/vehicles/racer.svg', size: 'car', minDuration: 11, maxDuration: 17, weight: 3 },
-		{ src: '/svg/eastereggs/vehicles/limo.svg', size: 'car', minDuration: 11, maxDuration: 17, weight: 3 }
+		{ src: '/svg/eastereggs/vehicles/racer.svg', size: 'car', minDuration: 11, maxDuration: 17, weight: 1 },
+		{ src: '/svg/eastereggs/vehicles/limo.svg', size: 'car', minDuration: 11, maxDuration: 17, weight: 1}
 	];
 
 	// Total weight for probability calculation
