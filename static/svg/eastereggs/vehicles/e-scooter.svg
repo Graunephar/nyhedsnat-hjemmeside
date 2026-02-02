@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 142.49 187.48">
+  <defs>
+    <style>
+      .cls-1, .cls-2 {
+        fill: #ff3b3b;
+      }
+
+      .cls-1, .cls-3 {
+        isolation: isolate;
+        opacity: .55;
+      }
+
+      .cls-4 {
+        fill: #043139;
+      }
+
+      .cls-5 {
+        fill: #10131c;
+      }
+
+      .cls-6 {
+        fill: #0a0d14;
+      }
+
+      .cls-7 {
+        fill: #050609;
+      }
+
+      .cls-8 {
+        fill: url(#linear-gradient);
+      }
+
+      .cls-9 {
+        fill: #675006;
+      }
+
+      .cls-3, .cls-10 {
+        fill: #fff3bf;
+      }
+
+      .cls-11 {
+        fill: #0a5360;
+      }
+
+      .cls-12 {
+        fill: #542d3a;
+      }
+
+      .cls-13 {
+        fill: #ff5a5a;
+      }
+    </style>
+    <linearGradient id="linear-gradient" x1="608.49" y1="841.75" x2="609.49" y2="841.75" gradientTransform="translate(25615.28 15295.39) rotate(-180) scale(42 18.05)" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#fff3bf" stop-opacity=".45"/>
+      <stop offset=".6" stop-color="#f1bb0e" stop-opacity=".18"/>
+      <stop offset="1" stop-color="#f1bb0e" stop-opacity="0"/>
+    </linearGradient>
+  </defs>
+  <path class="cls-8" d="M58.79,110.13c-20,6-42,4-42-8,0-8,22-10,42,0v8Z"/>
+  <g>
+    <g>
+      <circle class="cls-6" cx="106.79" cy="154.13" r="16"/>
+      <circle class="cls-11" cx="106.79" cy="154.13" r="9"/>
+      <circle class="cls-6" cx="50.79" cy="154.13" r="16"/>
+      <circle class="cls-11" cx="50.79" cy="154.13" r="9"/>
+    </g>
+    <path class="cls-5" d="M106.79,150.13h0c0,2.21-1.79,4-4,4h-48c-2.21,0-4-1.79-4-4h0c0-2.21,1.79-4,4-4h48c2.21,0,4,1.79,4,4Z"/>
+    <path class="cls-5" d="M54.79,67.13v78c0,1.66-1.34,3-3,3h0c-1.66,0-3-1.34-3-3v-78c0-1.66,1.34-3,3-3h0c1.66,0,3,1.34,3,3Z"/>
+    <path class="cls-5" d="M66.79,65.13h0c0,1.66-1.34,3-3,3h-30c-1.66,0-3-1.34-3-3h0c0-1.66,1.34-3,3-3h30c1.66,0,3,1.34,3,3Z"/>
+    <rect class="cls-13" x="46.79" y="94.13" width="10" height="26" rx="4" ry="4" transform="translate(103.58 214.25) rotate(-180)"/>
+    <circle class="cls-10" cx="48.79" cy="100.13" r="3"/>
+    <circle class="cls-3" cx="48.79" cy="100.13" r="9"/>
+    <circle class="cls-2" cx="112.79" cy="138.13" r="3"/>
+    <circle class="cls-1" cx="112.79" cy="138.13" r="9"/>
+  </g>
+  <g>
+    <circle class="cls-12" cx="82.79" cy="28.13" r="10"/>
+    <path class="cls-6" d="M80.79,34.13c-6,0-12-4-10-10,2-10,22-8,22,2,0,4-4,8-12,8Z"/>
+    <path class="cls-4" d="M74.79,86.13c0,24,0,48,4,66h12c-2-16-2-34,0-66h-16Z"/>
+    <path class="cls-7" d="M86.79,78.76c2,27.51,2,50.44,0,73.37h12c4-20.63,2-41.27-2-73.37h-10Z"/>
+    <path class="cls-6" d="M100.79,153.13h0c0,1.66-1.34,3-3,3h-10c-1.66,0-3-1.34-3-3h0c0-1.66,1.34-3,3-3h10c1.66,0,3,1.34,3,3Z"/>
+    <path class="cls-6" d="M82.79,153.13h0c0,1.66-1.34,3-3,3h-12c-1.66,0-3-1.34-3-3h0c0-1.66,1.34-3,3-3h12c1.66,0,3,1.34,3,3Z"/>
+    <path class="cls-9" d="M82.79,86.13c-14,0-20-16-16-32,4-14,28-14,32,0,4,16-2,32-16,32Z"/>
+    <path class="cls-12" d="M74.79,74.13c-10,6-20,8-28,4v-8c6,2,14,0,24-4l4,8Z"/>
+  </g>
+</svg>

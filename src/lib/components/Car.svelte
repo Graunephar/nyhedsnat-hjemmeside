@@ -51,7 +51,7 @@
 	>
 		<button class="car-button" onclick={handleClick} aria-label="Spawn convoy">
 			<img
-				src="/svg/car.svg"
+				src="/svg/car-1.svg"
 				alt=""
 				class="car"
 			/>

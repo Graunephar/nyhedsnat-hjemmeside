@@ -4,7 +4,7 @@
 	import Footer from '$lib/components/Footer.svelte';
 	import Drone from '$lib/components/Drone.svelte';
 	import Ufo from '$lib/components/Ufo.svelte';
-	import Car from '$lib/components/Car.svelte';
+	import Vehicles from '$lib/components/Vehicles.svelte';
 	import Bus from '$lib/components/Bus.svelte';
 	import Convoy from '$lib/components/Convoy.svelte';
 
@@ -27,7 +27,7 @@
 <!-- Moon in top right corner -->
 <div class="moon-container">
 	<div class="moon-glow"></div>
-	<img src="/svg/moon.svg" alt="" class="moon" aria-hidden="true" />
+	<img src="/svg/background/moon.svg" alt="" class="moon" aria-hidden="true" />
 </div>
 
 <!-- Flying drone -->
@@ -45,12 +45,16 @@
 		{@render children()}
 	</main>
 
-	<!-- Houses silhouette at the bottom -->
+	<!-- Houses silhouette at the bottom (stacked layers) -->
 	<div class="houses-container">
-		<Car />
+		<!-- Back layer: houses without lights (behind vehicles) -->
+		<img src="/svg/background/huse-no-lights.svg" alt="" class="houses-silhouette houses-back" aria-hidden="true" />
+		<!-- Vehicles drive between the layers -->
+		<Vehicles />
 		<Bus />
 		<Convoy />
-		<img src="/svg/huse.svg" alt="" class="houses-silhouette" aria-hidden="true" />
+		<!-- Front layer: house lights (above vehicles) -->
+		<img src="/svg/background/huse-lights.svg" alt="" class="houses-silhouette houses-front" aria-hidden="true" />
 	</div>
 
 	<Footer />
@@ -140,5 +144,20 @@
 		min-width: 1200px;
 		margin-left: 50%;
 		transform: translateX(-50%);
+		pointer-events: none;
+	}
+
+	/* Back layer sets the container height */
+	.houses-back {
+		position: relative;
+		z-index: 1;
+	}
+
+	/* Front layer overlays on top */
+	.houses-front {
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		z-index: 3;
 	}
 </style>

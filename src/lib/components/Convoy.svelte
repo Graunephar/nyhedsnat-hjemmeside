@@ -2,19 +2,37 @@
 	import { onMount } from 'svelte';
 	import { triggerConvoy } from '$lib/stores/convoy';
 
+	// Available car types for the convoy
+	const carTypes = [
+		'/svg/eastereggs/vehicles/car-1.svg',
+		'/svg/eastereggs/vehicles/car-2.svg',
+		'/svg/eastereggs/vehicles/car-3.svg',
+		'/svg/eastereggs/vehicles/car-4.svg',
+		'/svg/eastereggs/vehicles/car-5.svg'
+	];
+
+	const carHeight = 45; // Match the SIZE.car from Vehicles
+	const carCount = 10;
+	const gap = 40;
+
 	let visible = $state(false);
 	let direction = $state<'ltr' | 'rtl'>('ltr');
 	let duration = $state(20);
+	let convoyCars = $state<string[]>([]);
 
-	const carCount = 10;
-	const carWidth = 120;
-	const gap = 60; // Half a car's width
+	// Generate a random mix of cars
+	function generateConvoyMix(): string[] {
+		return Array(carCount).fill(null).map(() =>
+			carTypes[Math.floor(Math.random() * carTypes.length)]
+		);
+	}
 
 	const startConvoy = () => {
 		if (visible) return; // Don't start if already running
 
 		direction = Math.random() > 0.5 ? 'ltr' : 'rtl';
 		duration = Math.random() * 5 + 18; // 18-23 seconds
+		convoyCars = generateConvoyMix();
 
 		visible = true;
 
@@ -33,23 +51,15 @@
 			}
 		});
 
-		// Very rare: initial delay between 3-8 minutes
-		const initialDelay = Math.random() * 300000 + 180000;
-
-		// First convoy after random delay
-		setTimeout(() => {
-			startConvoy();
-
-			// Schedule next convoys every 5-10 minutes (very rare)
-			const scheduleNext = () => {
-				const nextInterval = Math.random() * 300000 + 300000;
-				setTimeout(() => {
-					startConvoy();
-					scheduleNext();
-				}, nextInterval);
-			};
-			scheduleNext();
-		}, initialDelay);
+		// Convoy interval: 0-5 minutes (can happen from start)
+		const scheduleNext = () => {
+			const nextInterval = Math.random() * 300000; // 0-5 minutes
+			setTimeout(() => {
+				startConvoy();
+				scheduleNext();
+			}, nextInterval);
+		};
+		scheduleNext();
 
 		return unsubscribe;
 	});
@@ -60,12 +70,11 @@
 		class="convoy-container {direction}"
 		style="--duration: {duration}s;"
 	>
-		{#each Array(carCount) as _, i}
+		{#each convoyCars as carSrc}
 			<img
-				src="/svg/car.svg"
+				src={carSrc}
 				alt=""
 				class="convoy-car"
-				style="--offset: {i * (carWidth + gap)}px;"
 				aria-hidden="true"
 			/>
 		{/each}
@@ -79,7 +88,8 @@
 		z-index: 2;
 		pointer-events: none;
 		display: flex;
-		gap: 60px;
+		align-items: flex-end;
+		gap: 40px;
 	}
 
 	/* Left to right drive */
@@ -101,14 +111,15 @@
 	}
 
 	.convoy-car {
-		width: 120px;
-		height: auto;
+		height: 45px;
+		width: auto;
 		filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.5));
 	}
 
+	/* Offset needs to hide full convoy: 10 cars × ~100px + 9 gaps × 40px ≈ 1400px */
 	@keyframes drive-ltr {
 		0% {
-			transform: translateX(-1900px);
+			transform: translateX(-2000px);
 		}
 		100% {
 			transform: translateX(calc(100vw + 200px));
@@ -117,7 +128,7 @@
 
 	@keyframes drive-rtl {
 		0% {
-			transform: translateX(1900px);
+			transform: translateX(2000px);
 		}
 		100% {
 			transform: translateX(calc(-100vw - 200px));

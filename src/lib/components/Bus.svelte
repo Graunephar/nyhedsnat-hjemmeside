@@ -45,7 +45,7 @@
 		style="--duration: {duration}s;"
 	>
 		<img
-			src="/svg/bus.svg"
+			src="/svg/eastereggs/vehicles/bus.svg"
 			alt=""
 			class="bus"
 			aria-hidden="true"

@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 611.41 80.01">
+  <defs>
+    <style>
+      .cls-1, .cls-2, .cls-3, .cls-4, .cls-5, .cls-6, .cls-7, .cls-8 {
+        isolation: isolate;
+      }
+
+      .cls-1, .cls-2, .cls-4, .cls-6 {
+        opacity: .55;
+      }
+
+      .cls-1, .cls-9 {
+        fill: #ff3b3b;
+      }
+
+      .cls-10 {
+        fill: #10131c;
+      }
+
+      .cls-11, .cls-5, .cls-6, .cls-7, .cls-8 {
+        fill: #0a0d14;
+      }
+
+      .cls-2 {
+        fill: url(#radial-gradient);
+      }
+
+      .cls-3 {
+        fill: none;
+        opacity: .25;
+        stroke: #0a0d14;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+        stroke-width: .18px;
+      }
+
+      .cls-4, .cls-12 {
+        fill: #fff3bf;
+      }
+
+      .cls-5 {
+        opacity: .5;
+      }
+
+      .cls-7 {
+        opacity: .85;
+      }
+
+      .cls-8 {
+        opacity: .45;
+      }
+    </style>
+    <radialGradient id="radial-gradient" cx="588.17" cy="578.7" fx="588.17" fy="578.7" r=".85" gradientTransform="translate(-177486.39 -24972.3) scale(302.3 43.25)" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#ffe88a" stop-opacity=".9"/>
+      <stop offset=".4" stop-color="#ffe88a" stop-opacity=".3"/>
+      <stop offset="1" stop-color="#ffe88a" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <ellipse class="cls-2" cx="162.36" cy="54" rx="151.15" ry="21.62" transform="translate(-3.8 13.17) rotate(-4.59)"/>
+  <g>
+    <path class="cls-10" d="M597.43,35.82l-6.3,15.59h-238.77s5.64-16.25,5.64-16.25c4.31-13.27,17.58-23.55,35.82-23.55h205.61c4.64,5.31,2.32,13.27-1.99,24.21Z"/>
+    <path class="cls-6" d="M590.13,34.49l-4.64,11.94h-218.88s5.97-14.92,5.97-14.92c3.32-8.62,11.94-15.25,23.88-15.25h195.66c2.65,4.31,1.33,10.28-1.99,18.24Z"/>
+    <path class="cls-10" d="M364.62,40.46l-3.98,10.94h-69.64s5.64-13.27,5.64-13.27c3.65-9.62,13.6-16.58,26.86-16.58h35.48c6.96,3.65,8.95,9.62,5.64,18.9Z"/>
+    <path class="cls-5" d="M356,47.43h-52.4s4.64-10.61,4.64-10.61c2.65-6.96,9.29-11.94,17.91-11.94h27.53s2.32,22.55,2.32,22.55Z"/>
+    <path class="cls-7" d="M348.71,41.46h-34.16s2.65-6.96,2.65-6.96c1.66-3.98,5.97-6.96,11.61-6.96h18.24s1.66,13.93,1.66,13.93Z"/>
+    <path class="cls-7" d="M602.73,58.04h-329.97c0-3.65,4.31-6.63,9.95-6.63h320.02v6.63Z"/>
+    <g>
+      <circle class="cls-11" cx="539.72" cy="54.72" r="15.59"/>
+      <circle class="cls-10" cx="539.72" cy="54.72" r="9.95"/>
+      <circle class="cls-8" cx="539.72" cy="54.72" r="3.65"/>
+      <circle class="cls-11" cx="393.81" cy="54.72" r="15.59"/>
+      <circle class="cls-10" cx="393.81" cy="54.72" r="9.95"/>
+      <circle class="cls-8" cx="393.81" cy="54.72" r="3.65"/>
+      <circle class="cls-11" cx="310.9" cy="54.72" r="15.59"/>
+      <circle class="cls-10" cx="310.9" cy="54.72" r="9.95"/>
+      <circle class="cls-8" cx="310.9" cy="54.72" r="3.65"/>
+    </g>
+    <g>
+      <circle class="cls-9" cx="598.75" cy="36.81" r="2.49"/>
+      <circle class="cls-1" cx="598.75" cy="36.81" r="7.3"/>
+      <circle class="cls-12" cx="289.68" cy="36.81" r="2.82"/>
+      <circle class="cls-4" cx="289.68" cy="36.81" r="8.62"/>
+    </g>
+    <path class="cls-3" d="M393.81,21.56h185.71"/>
+    <path class="cls-3" d="M294.32,44.11h63.01"/>
+  </g>
+</svg>
