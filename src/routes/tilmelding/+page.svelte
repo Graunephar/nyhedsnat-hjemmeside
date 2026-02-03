@@ -71,7 +71,7 @@
 			<ul class="space-y-2 text-star-white/70">
 				<li class="flex items-center gap-2">
 					<span class="text-gold-400">•</span>
-					4–6 deltagere (færre er ikke muligt)
+					4–7 deltagere (færre er ikke muligt)
 				</li>
 				<li class="flex items-center gap-2">
 					<span class="text-gold-400">•</span>

@@ -15,7 +15,7 @@ Har du som senior lyst til at være med i planlægningen på forhånd, så høre
 			answer: `Væbnere og seniorvæbnere deltager i Nyhedsnat som en del af en redaktion.
 
 En redaktion:
-• Består af 4-6 deltagere
+• Består af 4-7 deltagere
 • Har minimum én leder
 • Har base i fælles hal sammen med de andre redaktioner
 

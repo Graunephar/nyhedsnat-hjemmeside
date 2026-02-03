@@ -69,7 +69,7 @@
 							<span class="text-gold-400 font-bold">1</span>
 						</div>
 						<div>
-							<span class="text-star-white font-medium">4–6 deltagere</span>
+							<span class="text-star-white font-medium">4–7 deltagere</span>
 							<span class="text-star-white/50"> (færre er ikke muligt)</span>
 						</div>
 					</li>
@@ -77,7 +77,7 @@
 						<div class="w-8 h-8 rounded-full bg-gold-500/20 flex items-center justify-center flex-shrink-0 mt-0.5">
 							<span class="text-gold-400 font-bold">2</span>
 						</div>
-						<span class="text-star-white/80">Minimum én leder med bil</span>
+						<span class="text-star-white/80">Minimum én leder og en bil pr 2 redaktioner</span>
 					</li>
 					<li class="flex items-start gap-4">
 						<div class="w-8 h-8 rounded-full bg-gold-500/20 flex items-center justify-center flex-shrink-0 mt-0.5">
@@ -87,7 +87,7 @@
 					</li>
 				</ul>
 				<p class="text-star-white/50 mt-6 text-sm border-t border-gold-500/20 pt-4">
-					Kredse må gerne gå sammen om at stille en redaktion.
+					Kredse må gerne gå sammen om at stille en redaktion. og vi hjælper i udvalget gerne med at formidle kontakten mellem kredse.
 				</p>
 			</section>
 
@@ -146,6 +146,30 @@
 				<p class="text-gold-400/80 font-medium">
 					Der er IT-kyndige frivillige til stede hele natten.
 				</p>
+			</section>
+
+			<!-- FAQ -->
+			<section class="card-dark rounded-2xl p-8">
+				<h2 class="text-2xl font-bold text-star-white mb-6 flex items-center gap-3">
+					<span class="text-3xl">❓</span>
+					Ofte stillede spørgsmål
+				</h2>
+				<div class="space-y-6">
+					<div>
+						<h3 class="text-lg font-bold text-star-white mb-3">Skal man være vågen hele natten?</h3>
+						<div class="text-star-white/70 space-y-3 leading-relaxed">
+							<p>
+								Redaktionerne er kun ude til events i perioder. Resten af tiden er man på basen, hvor der er ro til at skrive avis og arbejde med fotos og reels.
+							</p>
+							<p>
+								Man skiftes i redaktionen, så ikke alle er ude samtidig, og der er lagt pauser ind i programmet. Det betyder, at man kan nå at skrive sin avis mellem events.
+							</p>
+							<p>
+								Hvornår man går i seng, er op til den enkelte redaktion (læs: mest lederne).
+							</p>
+						</div>
+					</div>
+				</div>
 			</section>
 		</div>
 

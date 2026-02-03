@@ -10,9 +10,6 @@
 			<h1 class="text-4xl md:text-5xl lg:text-6xl font-bold text-star-white mb-6">
 				<span class="text-gradient-gold">Program</span>
 			</h1>
-			<p class="text-xl text-star-white/60 max-w-2xl mx-auto">
-				6.-7. november 2026
-			</p>
 		</div>
 
 		<!-- Timeline -->
@@ -27,6 +24,7 @@
 					{ time: '20:00', title: 'Fælles intro', icon: '👋' },
 					{ time: '20:30–01:00', title: 'Events', icon: '⚡' },
 					{ time: '01:00', title: 'Natmad', icon: '🍕' },
+					{ time: '', title: 'Sove eller arbejde på aviser', icon: '😴' },
 					{ time: '07:00', title: 'Deadline for aflevering af aviser', icon: '📰' },
 					{ time: '09:00', title: 'Morgenmad', icon: '🥐' },
 					{ time: '10:00', title: 'Kåring af vindere', icon: '🏆' },
