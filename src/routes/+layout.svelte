@@ -7,6 +7,8 @@
 	import Vehicles from '$lib/components/Vehicles.svelte';
 	import Bus from '$lib/components/Bus.svelte';
 	import Convoy from '$lib/components/Convoy.svelte';
+	import MoonLaser from '$lib/components/MoonLaser.svelte';
+	import Streamers from '$lib/components/Streamers.svelte';
 
 	let { children } = $props();
 </script>
@@ -24,11 +26,11 @@
 	<div class="shooting-star"></div>
 </div>
 
-<!-- Moon in top right corner -->
-<div class="moon-container">
-	<div class="moon-glow"></div>
-	<img src="/svg/background/moon.svg" alt="" class="moon" aria-hidden="true" />
-</div>
+<!-- Moon in top right corner (double-click for laser!) -->
+<MoonLaser />
+
+<!-- Streamers easter egg (triggered by double-clicking logo) -->
+<Streamers />
 
 <!-- Flying drone -->
 <Drone />
@@ -61,69 +63,6 @@
 </div>
 
 <style>
-	.moon-container {
-		position: absolute;
-		top: 110px;
-		right: 25px;
-		z-index: 1;
-		pointer-events: none;
-	}
-
-	.moon {
-		width: 60px;
-		height: auto;
-		position: relative;
-		z-index: 1;
-	}
-
-	.moon-glow {
-		position: absolute;
-		top: 50%;
-		left: 50%;
-		transform: translate(-50%, -50%);
-		width: 100px;
-		height: 100px;
-		border-radius: 50%;
-		background: radial-gradient(
-			circle,
-			rgba(255, 255, 235, 0.45) 0%,
-			rgba(255, 255, 215, 0.28) 22%,
-			rgba(255, 255, 190, 0.14) 45%,
-			rgba(255, 255, 160, 0.05) 70%,
-			transparent 100%
-		);
-		filter: blur(30px);
-		animation: moon-pulse 8s ease-in-out infinite;
-	}
-
-	@media (min-width: 768px) {
-		.moon-container {
-			top: 200px;
-			right: 50px;
-		}
-
-		.moon {
-			width: 120px;
-		}
-
-		.moon-glow {
-			width: 200px;
-			height: 200px;
-		}
-	}
-
-	@keyframes moon-pulse {
-		0%,
-		100% {
-			opacity: 0.8;
-			transform: translate(-50%, -50%) scale(1);
-		}
-		50% {
-			opacity: 1;
-			transform: translate(-50%, -50%) scale(1.1);
-		}
-	}
-
 	.main-content {
 		position: relative;
 		z-index: 2;

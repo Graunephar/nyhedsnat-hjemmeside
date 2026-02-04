@@ -21,6 +21,12 @@
 		mobileMenuOpen = false;
 	}
 
+	function handleLogoDoubleClick(e: MouseEvent) {
+		e.preventDefault();
+		// Trigger streamers easter egg
+		window.dispatchEvent(new CustomEvent('trigger-streamers'));
+	}
+
 	function isActive(href: string): boolean {
 		if (href === '/') {
 			return page.url.pathname === '/';
@@ -45,8 +51,8 @@
 	<div class="border-b border-gold-500/20 bg-night-900/90 backdrop-blur-md">
 		<div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
 			<div class="flex items-center justify-between pt-4 pb-1 md:pt-5 md:pb-2">
-				<!-- Large Logo Area -->
-				<a href="/" class="group flex items-center gap-3" onclick={closeMobileMenu}>
+				<!-- Large Logo Area (double-click for streamers!) -->
+				<a href="/" class="group flex items-center gap-3" onclick={closeMobileMenu} ondblclick={handleLogoDoubleClick}>
 					<img
 						src="/svg/logo.svg"
 						alt="NyhedsNat Logo"
