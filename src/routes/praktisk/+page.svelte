@@ -147,30 +147,6 @@
 					Der er IT-kyndige frivillige til stede hele natten.
 				</p>
 			</section>
-
-			<!-- FAQ -->
-			<section class="card-dark rounded-2xl p-8">
-				<h2 class="text-2xl font-bold text-star-white mb-6 flex items-center gap-3">
-					<span class="text-3xl">❓</span>
-					Ofte stillede spørgsmål
-				</h2>
-				<div class="space-y-6">
-					<div>
-						<h3 class="text-lg font-bold text-star-white mb-3">Skal man være vågen hele natten?</h3>
-						<div class="text-star-white/70 space-y-3 leading-relaxed">
-							<p>
-								Redaktionerne er kun ude til events i perioder. Resten af tiden er man på basen, hvor der er ro til at skrive avis og arbejde med fotos og reels.
-							</p>
-							<p>
-								Man skiftes i redaktionen, så ikke alle er ude samtidig, og der er lagt pauser ind i programmet. Det betyder, at man kan nå at skrive sin avis mellem events.
-							</p>
-							<p>
-								Hvornår man går i seng, er op til den enkelte redaktion (læs: mest lederne).
-							</p>
-						</div>
-					</div>
-				</div>
-			</section>
 		</div>
 
 	</div>

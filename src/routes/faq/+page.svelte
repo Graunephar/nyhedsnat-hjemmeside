@@ -1,4 +1,6 @@
 <script lang="ts">
+	import { asyncWrapProviders } from "async_hooks";
+
 	const faqs = [
 				{
 			question: 'Hvem planlægger?',
@@ -50,6 +52,15 @@ Det kan fx være:
 • Video
 
 Der gives også priser for bedste pressefoto og bedste reel, så der er mange måder at bidrage på.`
+		},
+		{
+			question: `Skal man være vågen hele natten?`,
+			answer: `Redaktionerne er kun ude til events i perioder. Resten af tiden er man på basen, hvor der er ro til at skrive avis og arbejde med fotos og reels.
+					
+Man skiftes i redaktionen, så ikke alle er ude samtidig, og der er lagt pauser ind i programmet. Det betyder, at man kan nå at skrive sin avis mellem events.
+
+Hvornår man går i seng, er op til den enkelte redaktion (læs: mest lederne).`
+
 		},
 		{
 			question: 'Skal deltagerne være gode til IT?',

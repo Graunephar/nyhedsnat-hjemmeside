@@ -64,7 +64,6 @@
 		<!-- Bottom bar -->
 		<div class="border-t border-gold-500/20 pt-8 flex flex-col md:flex-row items-center justify-between gap-4">
 			<p class="text-star-white/40 text-sm">&copy; {currentYear} NyhedsNat - FDF Landsdel 4</p>
-			<p class="text-star-white/30 text-xs">6.-7. november 2026</p>
 		</div>
 	</div>
 </footer>
