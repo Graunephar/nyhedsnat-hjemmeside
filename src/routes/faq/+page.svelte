@@ -1,8 +1,6 @@
 <script lang="ts">
-	import { asyncWrapProviders } from "async_hooks";
-
 	const faqs = [
-				{
+		{
 			question: 'Hvem planlægger?',
 			answer: `Nyhedsnat planlægges og afvikles af et landsdelsudvalg, som står for selve arrangementet. Udvalget sætter rammerne og deltager aktivt i planlægningen.
 
@@ -12,7 +10,7 @@ De seniorer, der tilmelder sig og møder op på dagen, er med til at afvikle eve
 
 Har du som senior lyst til at være med i planlægningen på forhånd, så hører vi meget gerne fra dig via info@nyhedsnat.dk`
 		},
-				{
+		{
 			question: 'Hvordan deltager man som væbner eller seniorvæbner?',
 			answer: `Væbnere og seniorvæbnere deltager i Nyhedsnat som en del af en redaktion.
 
@@ -60,7 +58,12 @@ Der gives også priser for bedste pressefoto og bedste reel, så der er mange m�
 Man skiftes i redaktionen, så ikke alle er ude samtidig, og der er lagt pauser ind i programmet. Det betyder, at man kan nå at skrive sin avis mellem events.
 
 Hvornår man går i seng, er op til den enkelte redaktion (læs: mest lederne).`
+		},
+		{
+			question: 'Skal lederne være "på" hele natten?',
+			answer: `Nej. Arrangementet er tilrettelagt, så lederne ikke skal være aktive hele tiden.
 
+Kortagekørsel og praktisk koordinering styres centralt. Som leder er der god tid til både at være en del af redaktionen, drikke kaffe og tage pauser.`
 		},
 		{
 			question: 'Skal deltagerne være gode til IT?',
@@ -73,12 +76,6 @@ Derudover sørger udvalget for, at der er IT-kyndige frivillige til stede hele n
 			answer: `Ja. Erfaringen er, at væbnere hurtigt finder ind i legen.
 
 Rammerne er tydelige, opgaverne er konkrete, og der er voksne og seniorer omkring dem hele tiden. Det er ikke en konkurrence i at være dygtigst – men i at være kreativ og have det sjovt sammen.`
-		},
-		{
-			question: 'Skal lederne være "på" hele natten?',
-			answer: `Nej. Arrangementet er tilrettelagt, så lederne ikke skal være aktive hele tiden.
-
-Kortagekørsel og praktisk koordinering styres centralt. Som leder er der god tid til både at være en del af redaktionen, drikke kaffe og tage pauser.`
 		},
 		{
 			question: 'Hvad laver seniorerne egentlig?',
@@ -126,13 +123,13 @@ Det gør dem genkendelige og sjove at arbejde med, samtidig med at de er tydelig
 </svelte:head>
 
 <div class="min-h-screen px-4 py-12">
-	<div class="max-w-4xl mx-auto">
+	<div class="mx-auto max-w-4xl">
 		<!-- Page Header -->
-		<div class="text-center mb-16">
-			<h1 class="text-4xl md:text-5xl lg:text-6xl font-bold text-star-white mb-6">
+		<div class="mb-16 text-center">
+			<h1 class="mb-6 text-4xl font-bold text-star-white md:text-5xl lg:text-6xl">
 				<span class="text-gradient-gold">Ofte stillede spørgsmål</span>
 			</h1>
-			<p class="text-xl text-star-white/60 max-w-2xl mx-auto">
+			<p class="mx-auto max-w-2xl text-xl text-star-white/60">
 				Find svar på de mest almindelige spørgsmål om Nyhedsnat
 			</p>
 		</div>
@@ -140,26 +137,36 @@ Det gør dem genkendelige og sjove at arbejde med, samtidig med at de er tydelig
 		<!-- FAQ Accordion -->
 		<div class="space-y-4">
 			{#each faqs as faq, index}
-				<div class="card-dark rounded-2xl overflow-hidden">
+				<div class="card-dark overflow-hidden rounded-2xl">
 					<button
 						onclick={() => toggle(index)}
-						class="w-full px-6 py-5 text-left flex items-center justify-between gap-4 hover:bg-night-700/30 transition-colors"
+						class="flex w-full items-center justify-between gap-4 px-6 py-5 text-left transition-colors hover:bg-night-700/30"
 					>
-						<h3 class="text-lg font-medium text-star-white pr-4">{faq.question}</h3>
+						<h3 class="pr-4 text-lg font-medium text-star-white">{faq.question}</h3>
 						<div
-							class="w-8 h-8 rounded-full bg-gold-500/20 flex items-center justify-center flex-shrink-0 transition-transform duration-300"
+							class="flex h-8 w-8 flex-shrink-0 items-center justify-center rounded-full bg-gold-500/20 transition-transform duration-300"
 							class:rotate-180={openIndex === index}
 						>
-							<svg class="w-4 h-4 text-gold-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-								<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+							<svg
+								class="h-4 w-4 text-gold-400"
+								fill="none"
+								stroke="currentColor"
+								viewBox="0 0 24 24"
+							>
+								<path
+									stroke-linecap="round"
+									stroke-linejoin="round"
+									stroke-width="2"
+									d="M19 9l-7 7-7-7"
+								/>
 							</svg>
 						</div>
 					</button>
 
 					{#if openIndex === index}
-						<div class="px-6 pb-6 animate-fadeIn">
+						<div class="animate-fadeIn px-6 pb-6">
 							<div class="border-t border-gold-500/20 pt-4">
-								<p class="text-star-white/70 whitespace-pre-line leading-relaxed">{faq.answer}</p>
+								<p class="leading-relaxed whitespace-pre-line text-star-white/70">{faq.answer}</p>
 							</div>
 						</div>
 					{/if}
@@ -168,19 +175,16 @@ Det gør dem genkendelige og sjove at arbejde med, samtidig med at de er tydelig
 		</div>
 
 		<!-- Contact CTA -->
-		<div class="mt-16 card-dark rounded-2xl p-8 text-center">
-			<h2 class="text-2xl font-bold text-star-white mb-4">Har du flere spørgsmål?</h2>
-			<p class="text-star-white/60 mb-6">
-				Vi er altid klar til at hjælpe.
-			</p>
+		<div class="card-dark mt-16 rounded-2xl p-8 text-center">
+			<h2 class="mb-4 text-2xl font-bold text-star-white">Har du flere spørgsmål?</h2>
+			<p class="mb-6 text-star-white/60">Vi er altid klar til at hjælpe.</p>
 			<a
 				href="/kontakt"
-				class="inline-block px-8 py-4 bg-gradient-to-r from-gold-500 to-gold-600 text-night-900 font-bold rounded-full glow-gold hover:scale-105 transition-all"
+				class="glow-gold inline-block rounded-full bg-gradient-to-r from-gold-500 to-gold-600 px-8 py-4 font-bold text-night-900 transition-all hover:scale-105"
 			>
 				Kontakt os
 			</a>
 		</div>
-
 	</div>
 </div>
 
