@@ -34,7 +34,7 @@
 				{#each [
 					{ time: '19:00–20:00', title: 'Deltagerankomst', icon: '🚗' },
 					{ time: '20:00', title: 'Fælles intro', icon: '👋' },
-					{ time: '20:30–01:00', title: 'Events', icon: '⚡' },
+					{ time: '20:30–01:00', title: 'Hændelser', icon: '⚡' },
 					{ time: '01:00', title: 'Natmad', icon: '🍕' },
 					{ time: '', title: 'Sove eller arbejde på aviser', icon: '😴' },
 					{ time: '07:00', title: 'Deadline for aflevering af aviser', icon: '📰' },
@@ -62,7 +62,7 @@
 		<div class="card-dark rounded-2xl p-8 text-center">
 			<h2 class="text-2xl font-bold text-star-white mb-4">En hel nat med oplevelser</h2>
 			<p class="text-star-white/60 mb-6">
-				Fra ankomst fredag aften til kåring lørdag formiddag – fyldt med events, kreativitet og fællesskab.
+				Fra ankomst fredag aften til kåring lørdag formiddag – fyldt med hændelser, kreativitet og fællesskab.
 			</p>
 			<a
 				href="/tilmelding"

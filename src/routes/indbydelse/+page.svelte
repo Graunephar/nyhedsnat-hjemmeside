@@ -61,7 +61,7 @@
 			<div class="card-dark rounded-2xl p-8 flex flex-col">
 				<h2 class="text-2xl font-bold text-star-white mb-4">Indbydelse til seniorer</h2>
 				<p class="text-star-white/60 mb-8 flex-grow">
-					PDF med fokus på seniorernes rolle i Nyhedsnat, herunder events, roller og mulighed for at deltage i planlægningen.
+					PDF med fokus på seniorernes rolle i Nyhedsnat, herunder hændelser, roller og mulighed for at deltage i planlægningen.
 				</p>
 				<a
 					href="/files/Indbydelse_senior.pdf"

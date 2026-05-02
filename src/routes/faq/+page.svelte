@@ -21,9 +21,9 @@
 			question: 'Hvem planlægger?',
 			answer: `Nyhedsnat planlægges og afvikles af et landsdelsudvalg, som står for selve arrangementet. Udvalget sætter rammerne og deltager aktivt i planlægningen.
 
-Derudover arbejder vi på at samle en gruppe seniorer, som er med til at planlægge events på forhånd. Planlægningen foregår sammen med udvalget, som faciliterer processen og sikrer overblik og sammenhæng. Det giver mulighed for at tage ansvar, tænke og prøve kræfter med planlægning i praksis. En slags lederuddannelse i forklædning.
+Derudover arbejder vi på at samle en gruppe seniorer, som er med til at planlægge hændelser på forhånd. Planlægningen foregår sammen med udvalget, som faciliterer processen og sikrer overblik og sammenhæng. Det giver mulighed for at tage ansvar, tænke og prøve kræfter med planlægning i praksis. En slags lederuddannelse i forklædning.
 
-De seniorer, der tilmelder sig og møder op på dagen, er med til at afvikle events, få roller og skabe oplevelser for deltagerne. Alle bidrager, men på forskellige niveauer af ansvar.
+De seniorer, der tilmelder sig og møder op på dagen, er med til at afvikle hændelser, få roller og skabe oplevelser for deltagerne. Alle bidrager, men på forskellige niveauer af ansvar.
 
 Har du som senior lyst til at være med i planlægningen på forhånd, så hører vi meget gerne fra dig via info@nyhedsnat.dk`
 		},
@@ -36,15 +36,15 @@ En redaktion:
 • Har minimum én leder
 • Har base i fælles hal sammen med de andre redaktioner
 
-Som redaktion oplever man events, stiller spørgsmål og arbejder sammen om at lave en avis frem mod deadline næste morgen. Kun halvdelen af redaktionen er ude ad gangen, mens resten arbejder videre hjemme på basen.
+Som redaktion oplever man hændelser, stiller spørgsmål og arbejder sammen om at lave en avis frem mod deadline næste morgen. Kun halvdelen af redaktionen er ude ad gangen, mens resten arbejder videre hjemme på basen.
 
 Kredse kan slå sig sammen, hvis man ikke selv har deltagere nok til en hel redaktion.`
 		},
 		{
 			question: 'Hvordan deltager man som senior?',
-			answer: `Seniorer deltager i Nyhedsnat ved at skabe og spille de events, som redaktionerne skal opleve og dække.
+			answer: `Seniorer deltager i Nyhedsnat ved at skabe og spille de hændelser, som redaktionerne skal opleve og dække.
 
-Nogle seniorer udvælges på forhånd til at planlægge events. Andre seniorer får på dagen tildelt roller og indgår i afviklingen.
+Nogle seniorer udvælges på forhånd til at planlægge hændelser. Andre seniorer får på dagen tildelt roller og indgår i afviklingen.
 
 Som senior:
 • Spiller man forskellige roller
@@ -70,9 +70,9 @@ Der gives også priser for bedste pressefoto og bedste reel, så der er mange m�
 		},
 		{
 			question: `Skal man være vågen hele natten?`,
-			answer: `Redaktionerne er kun ude til events i perioder. Resten af tiden er man på basen, hvor der er ro til at skrive avis og arbejde med fotos og reels.
+			answer: `Redaktionerne er kun ude til hændelser i perioder. Resten af tiden er man på basen, hvor der er ro til at skrive avis og arbejde med fotos og reels.
 					
-Man skiftes i redaktionen, så ikke alle er ude samtidig, og der er lagt pauser ind i programmet. Det betyder, at man kan nå at skrive sin avis mellem events.
+Man skiftes i redaktionen, så ikke alle er ude samtidig, og der er lagt pauser ind i programmet. Det betyder, at man kan nå at skrive sin avis mellem hændelser.
 
 Hvornår man går i seng, er op til den enkelte redaktion (læs: mest lederne).`
 		},
@@ -96,20 +96,20 @@ Rammerne er tydelige, opgaverne er konkrete, og der er voksne og seniorer omkrin
 		},
 		{
 			question: 'Hvad laver seniorerne egentlig?',
-			answer: `Seniorerne spiller de roller og laver de events, som redaktionerne skal dække.
+			answer: `Seniorerne spiller de roller og laver de hændelser, som redaktionerne skal dække.
 
-Nogle seniorer er udvalgt på forhånd til at planlægge events. Andre seniorer får roller tildelt på dagen og indgår i eventafviklingen.
+Nogle seniorer er udvalgt på forhånd til at planlægge hændelser. Andre seniorer får roller tildelt på dagen og indgår i hændelsesafviklingen.
 
 Seniorerne leger andre mennesker – og væbnere og seniorvæbnere leger journalister.`
 		},
 		{
-			question: 'Er events virkelige?',
-			answer: `Nej. Alle events er fiktive, men ofte inspireret af aktuelle begivenheder.
+			question: 'Er hændelser virkelige?',
+			answer: `Nej. Alle hændelser er fiktive, men ofte inspireret af aktuelle begivenheder.
 
 Det gør dem genkendelige og sjove at arbejde med, samtidig med at de er tydeligt adskilt fra virkeligheden.`
 		},
 		{
-			question: 'Hvordan foregår transporten til events?',
+			question: 'Hvordan foregår transporten til hændelser?',
 			answer: `Transporten foregår via et fælles kortagekørselssystem.
 
 • To redaktioner kører sammen
