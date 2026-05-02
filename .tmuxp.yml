@@ -1,10 +1,10 @@
 session_name: dev
 windows:
   - window_name: main
-    layout: even-horizontal
+    layout: main-vertical
     panes:
       - shell_command:
-          - yarn dev --port 5174
-      - shell_command:
           - pi
-
+      - shell_command:
+          - yarn dev
+      - shell_command: []
