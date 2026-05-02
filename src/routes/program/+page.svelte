@@ -16,7 +16,7 @@
 </svelte:head>
 
 <div class="min-h-screen px-4 py-12">
-	<div class="max-w-4xl mx-auto">
+	<div class="max-w-6xl mx-auto">
 		<!-- Page Header -->
 		<div class="text-center mb-16">
 			<h1 class="text-4xl md:text-5xl lg:text-6xl font-bold text-star-white mb-6">
@@ -25,34 +25,52 @@
 		</div>
 
 		<!-- Timeline -->
-		<div class="space-y-6 mb-12">
+		<div class="mb-12">
 			<div class="relative">
 				<!-- Timeline Line -->
-				<div class="absolute left-6 md:left-8 top-0 bottom-0 w-0.5 bg-gold-500/30"></div>
+				<div class="absolute left-1/2 -translate-x-1/2 top-0 bottom-0 w-0.5 bg-gold-500/30"></div>
 
 				<!-- Timeline Items -->
 				{#each [
-					{ time: '19:00–20:00', title: 'Deltagerankomst', icon: '🚗' },
-					{ time: '20:00', title: 'Fælles intro', icon: '👋' },
-					{ time: '20:30–01:00', title: 'Events', icon: '⚡' },
-					{ time: '01:00', title: 'Natmad', icon: '🍕' },
+					{ time: '19:00', title: 'Ankomst', icon: '🚗' },
+					{ time: '19:30', title: 'Velkomst', icon: '👋' },
+					{ time: '20:00', title: 'Hændelser starter', icon: '⚡' },
+					{ time: '01:00', title: 'Video skal afleveres', icon: '🎬' },
+					{ time: '', title: 'Natmad', icon: '🍕' },
+					{ time: '02:00', title: 'Pressefoto afleveres', icon: '📸' },
 					{ time: '', title: 'Sove eller arbejde på aviser', icon: '😴' },
-					{ time: '07:00', title: 'Deadline for aflevering af aviser', icon: '📰' },
-					{ time: '09:00', title: 'Morgenmad', icon: '🥐' },
-					{ time: '10:00', title: 'Kåring af vindere', icon: '🏆' },
-					{ time: '11:00', title: 'Tak for i dag', icon: '👋' }
+					{ time: '04:00', title: 'Aflevering af aviser', icon: '📰' },
+					{ time: '07:30', title: 'Dommerne kommer', icon: '🧑‍⚖️' },
+					{ time: '08:30', title: 'Morgenmad', icon: '🥐' },
+					{ time: '', title: 'Afstemning om pressefoto og bedste reel', icon: '🗳️' },
+					{ time: '', title: 'Oprydning og video fra events', icon: '🧹' },
+					{ time: '10:15', title: 'Præmieoverrækkelse og afslutning', icon: '🏆' }
 				] as item, i}
-					<div class="relative flex items-start gap-6 pb-8 last:pb-0">
+					<div class="relative grid grid-cols-[1fr_auto_1fr] items-center gap-4 md:gap-8 py-3 md:py-2">
+						<!-- Left Content -->
+						{#if i % 2 === 0}
+							<div class="card-dark rounded-xl p-4 md:p-5 hover:border-gold-500/40 transition-colors text-right">
+								<span class="block text-gold-400 font-mono font-bold text-lg">{item.time}</span>
+								<h3 class="text-lg md:text-xl font-bold text-star-white mt-1">{item.title}</h3>
+							</div>
+						{:else}
+							<div></div>
+						{/if}
+
 						<!-- Dot -->
-						<div class="relative z-10 w-12 h-12 md:w-16 md:h-16 rounded-full bg-night-800 border-2 border-gold-500/50 flex items-center justify-center text-2xl">
+						<div class="relative z-10 w-12 h-12 md:w-14 md:h-14 rounded-full bg-night-800 border-2 border-gold-500/50 flex items-center justify-center text-2xl">
 							{item.icon}
 						</div>
 
-						<!-- Content -->
-						<div class="flex-1 card-dark rounded-xl p-6 hover:border-gold-500/40 transition-colors">
-							<span class="text-gold-400 font-mono font-bold text-lg">{item.time}</span>
-							<h3 class="text-xl font-bold text-star-white mt-2">{item.title}</h3>
-						</div>
+						<!-- Right Content -->
+						{#if i % 2 !== 0}
+							<div class="card-dark rounded-xl p-4 md:p-5 hover:border-gold-500/40 transition-colors">
+								<span class="block text-gold-400 font-mono font-bold text-lg">{item.time}</span>
+								<h3 class="text-lg md:text-xl font-bold text-star-white mt-1">{item.title}</h3>
+							</div>
+						{:else}
+							<div></div>
+						{/if}
 					</div>
 				{/each}
 			</div>
@@ -62,7 +80,7 @@
 		<div class="card-dark rounded-2xl p-8 text-center">
 			<h2 class="text-2xl font-bold text-star-white mb-4">En hel nat med oplevelser</h2>
 			<p class="text-star-white/60 mb-6">
-				Fra ankomst fredag aften til kåring lørdag formiddag – fyldt med events, kreativitet og fællesskab.
+				Fra ankomst fredag aften til præmieoverrækkelse og afslutning kl. 10:15 lørdag – fyldt med events, kreativitet og fællesskab.
 			</p>
 			<a
 				href="/tilmelding"
