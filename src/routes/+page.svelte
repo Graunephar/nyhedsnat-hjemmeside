@@ -1,4 +1,5 @@
 <script lang="ts">
+	import JoinButton from '$lib/components/JoinButton.svelte';
 </script>
 
 <svelte:head>
@@ -62,12 +63,7 @@
 		</p>
 
 		<!-- CTA Button -->
-		<a
-			href="/tilmelding"
-			class="inline-block px-10 py-5 bg-gradient-to-r from-gold-500 to-gold-600 text-night-900 font-bold text-xl rounded-full glow-gold hover:scale-105 transition-all duration-300"
-		>
-			Tilmeld jer Nyhedsnat
-		</a>
+		<JoinButton href="/tilmelding">Tilmeld jer Nyhedsnat</JoinButton>
 	</div>
 </section>
 
@@ -107,12 +103,7 @@
 				<p>Vil du være med til at skabe oplevelsen, kan du deltage i planlægningsweekenden den 25.–27. september.</p>
 				<p>Weekenden er både et kursus og en workshop, hvor vi udvikler hændelser, arbejder med roller og tester idéer.</p>
 			</div>
-			<a
-				href="/tilmelding"
-				class="inline-block px-8 py-4 border-2 border-gold-500/50 text-gold-400 font-bold rounded-full hover:bg-gold-500/10 hover:border-gold-400 transition-all duration-300"
-			>
-				Læs mere om at være senior
-			</a>
+			<JoinButton href="/faq" variant="secondary">Læs mere om at være senior</JoinButton>
 		</div>
 	</div>
 </section>
@@ -209,18 +200,8 @@
 				Tilmeld jeres redaktion og vær med til årets mest spændende nat.
 			</p>
 			<div class="flex flex-col sm:flex-row gap-4 justify-center">
-				<a
-					href="/tilmelding"
-					class="px-10 py-4 bg-gradient-to-r from-gold-500 to-gold-600 text-night-900 font-bold rounded-full glow-gold hover:scale-105 transition-all duration-300"
-				>
-					Tilmeld jer nu
-				</a>
-				<a
-					href="/praktisk"
-					class="px-10 py-4 border-2 border-gold-500/50 text-gold-400 font-bold rounded-full hover:bg-gold-500/10 hover:border-gold-400 transition-all duration-300"
-				>
-					Læs mere
-				</a>
+				<JoinButton href="/tilmelding">Tilmeld jer nu</JoinButton>
+				<JoinButton href="/praktisk" variant="secondary">Læs mere</JoinButton>
 			</div>
 		</div>
 	</div>

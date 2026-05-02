@@ -16,6 +16,8 @@
 </svelte:head>
 
 <script lang="ts">
+	import JoinButton from '$lib/components/JoinButton.svelte';
+
 	const faqSections = [
 		{
 			title: 'Om arrangementet',
@@ -214,12 +216,7 @@ Så lederne har god tid til andre ting end at sidde bag et rat.`
 		<div class="card-dark mt-16 rounded-2xl p-8 text-center">
 			<h2 class="mb-4 text-2xl font-bold text-star-white">Har du flere spørgsmål?</h2>
 			<p class="mb-6 text-star-white/60">Vi er altid klar til at hjælpe.</p>
-			<a
-				href="/kontakt"
-				class="glow-gold inline-block rounded-full bg-gradient-to-r from-gold-500 to-gold-600 px-8 py-4 font-bold text-night-900 transition-all hover:scale-105"
-			>
-				Kontakt os
-			</a>
+			<JoinButton href="/kontakt">Kontakt os</JoinButton>
 		</div>
 	</div>
 </div>

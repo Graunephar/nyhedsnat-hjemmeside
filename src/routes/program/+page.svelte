@@ -15,6 +15,10 @@
 	<meta name="twitter:image" content="https://nyhedsnat.dk/images/logo.png" />
 </svelte:head>
 
+<script lang="ts">
+	import JoinButton from '$lib/components/JoinButton.svelte';
+</script>
+
 <div class="min-h-screen px-4 py-12">
 	<div class="max-w-6xl mx-auto">
 		<!-- Page Header -->
@@ -68,12 +72,7 @@
 			<p class="text-star-white/60 mb-6">
 				Fra ankomst fredag aften til kåring lørdag formiddag – fyldt med hændelser, kreativitet og fællesskab.
 			</p>
-			<a
-				href="/tilmelding"
-				class="inline-block px-8 py-4 bg-gradient-to-r from-gold-500 to-gold-600 text-night-900 font-bold rounded-full glow-gold hover:scale-105 transition-all"
-			>
-				Tilmeld jer nu
-			</a>
+			<JoinButton href="/tilmelding">Tilmeld jer nu</JoinButton>
 		</div>
 
 	</div>
