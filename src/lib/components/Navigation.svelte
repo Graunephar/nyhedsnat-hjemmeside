@@ -4,11 +4,10 @@
 	let mobileMenuOpen = $state(false);
 
 	const navLinks = [
-		{ href: '/tilmelding', label: 'Tilmelding' },
-		{ href: '/indbydelse', label: 'Indbydelse' },
+		{ href: '/tilmelding', label: 'Tilmelding & indbydelse' },
 		{ href: '/program', label: 'Program' },
 		{ href: '/praktisk', label: 'Praktisk' },
-		{ href: '/regler', label: 'Regler' },
+		{ href: '/regler', label: 'Regler for aviser' },
 		{ href: '/faq', label: 'FAQ' },
 		{ href: '/kontakt', label: 'Kontakt' }
 	];

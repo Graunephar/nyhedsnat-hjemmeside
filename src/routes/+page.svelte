@@ -72,7 +72,7 @@
 </section>
 
 <!-- About Section -->
-<section class="py-20 px-4">
+<section class="pt-8 pb-12 px-4">
 	<div class="max-w-4xl mx-auto">
 		<div class="card-dark rounded-3xl p-8 md:p-12">
 			<h2 class="text-2xl md:text-3xl font-bold text-star-white mb-6">
@@ -91,6 +91,28 @@
 					deadline om morgenen.
 				</p>
 			</div>
+		</div>
+	</div>
+</section>
+
+<!-- Senior Planning Weekend Section -->
+<section class="py-12 px-4">
+	<div class="max-w-4xl mx-auto">
+		<div class="card-dark rounded-3xl p-8 md:p-10">
+			<h2 class="text-2xl md:text-3xl font-bold text-star-white mb-4">
+				Planlæg <span class="text-gradient-gold">NyhedsNat</span> som senior
+			</h2>
+			<div class="space-y-4 text-star-white/70 text-lg leading-relaxed mb-7">
+				<p>Alle hændelser planlægges af seniorer.</p>
+				<p>Vil du være med til at skabe oplevelsen, kan du deltage i planlægningsweekenden den 25.–27. september.</p>
+				<p>Weekenden er både et kursus og en workshop, hvor vi udvikler hændelser, arbejder med roller og tester idéer.</p>
+			</div>
+			<a
+				href="/tilmelding"
+				class="inline-block px-8 py-4 border-2 border-gold-500/50 text-gold-400 font-bold rounded-full hover:bg-gold-500/10 hover:border-gold-400 transition-all duration-300"
+			>
+				Læs mere om at være senior
+			</a>
 		</div>
 	</div>
 </section>
@@ -179,7 +201,7 @@
 </section>
 
 <!-- CTA Section -->
-<section class="py-20 px-4">
+<section class="py-12 px-4">
 	<div class="max-w-4xl mx-auto text-center">
 		<div class="card-dark rounded-3xl p-10 md:p-16">
 			<h2 class="text-3xl md:text-4xl font-bold text-star-white mb-6">Klar til Nyhedsnat?</h2>
