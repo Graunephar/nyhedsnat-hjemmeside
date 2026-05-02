@@ -799,7 +799,7 @@
 		position: absolute;
 		top: 110px;
 		right: 25px;
-		z-index: 101;
+		z-index: 40;
 		background: none;
 		border: none;
 		padding: 0;
@@ -907,6 +907,12 @@
 			background: radial-gradient(circle, rgba(255, 255, 255, 1) 0%, rgba(200, 255, 200, 0.7) 25%, rgba(0, 255, 0, 0.4) 50%, transparent 70%);
 			width: 220px;
 			height: 220px;
+		}
+	}
+
+	@media (max-width: 767px) and (min-resolution: 3dppx) {
+		.moon-button {
+			top: 140px;
 		}
 	}
 

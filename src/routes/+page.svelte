@@ -3,7 +3,7 @@
 
 <svelte:head>
 	<title>NyhedsNat i Landsdel 4 – 6.–7. november 2026</title>
-	<meta name="description" content="Nyhedsnat er et årligt arrangement for væbnere, seniorvæbnere og seniorer i FDF Landsdel 4. Over en nat samles deltagere i redaktioner, oplever events og laver aviser." />
+	<meta name="description" content="Nyhedsnat er et årligt arrangement for væbnere, seniorvæbnere og seniorer i FDF Landsdel 4. Over en nat samles deltagere i redaktioner, oplever hændelser og laver aviser." />
 	<link rel="canonical" href="https://nyhedsnat.dk/" />
 	<!-- Open Graph -->
 	<meta property="og:site_name" content="NyhedsNat" />
@@ -11,19 +11,19 @@
 	<meta property="og:type" content="website" />
 	<meta property="og:url" content="https://nyhedsnat.dk/" />
 	<meta property="og:title" content="NyhedsNat i Landsdel 4 – 6.–7. november 2026" />
-	<meta property="og:description" content="Nyhedsnat er et årligt arrangement for væbnere, seniorvæbnere og seniorer i FDF Landsdel 4. Over en nat samles deltagere i redaktioner, oplever events og laver aviser." />
+	<meta property="og:description" content="Nyhedsnat er et årligt arrangement for væbnere, seniorvæbnere og seniorer i FDF Landsdel 4. Over en nat samles deltagere i redaktioner, oplever hændelser og laver aviser." />
 	<meta property="og:image" content="https://nyhedsnat.dk/images/logo.png" />
 	<!-- Twitter Card -->
 	<meta name="twitter:card" content="summary" />
 	<meta name="twitter:title" content="NyhedsNat i Landsdel 4 – 6.–7. november 2026" />
-	<meta name="twitter:description" content="Nyhedsnat er et årligt arrangement for væbnere, seniorvæbnere og seniorer i FDF Landsdel 4. Over en nat samles deltagere i redaktioner, oplever events og laver aviser." />
+	<meta name="twitter:description" content="Nyhedsnat er et årligt arrangement for væbnere, seniorvæbnere og seniorer i FDF Landsdel 4. Over en nat samles deltagere i redaktioner, oplever hændelser og laver aviser." />
 	<meta name="twitter:image" content="https://nyhedsnat.dk/images/logo.png" />
 	<!-- JSON-LD Event -->
 	{@html `<script type="application/ld+json">${JSON.stringify({
 		"@context": "https://schema.org",
 		"@type": "Event",
 		"name": "NyhedsNat i Landsdel 4",
-		"description": "Nyhedsnat er et årligt arrangement for væbnere, seniorvæbnere og seniorer i FDF Landsdel 4. Over en nat samles deltagere i redaktioner, oplever events og laver aviser.",
+		"description": "Nyhedsnat er et årligt arrangement for væbnere, seniorvæbnere og seniorer i FDF Landsdel 4. Over en nat samles deltagere i redaktioner, oplever hændelser og laver aviser.",
 		"startDate": "2026-11-06T18:00:00+01:00",
 		"endDate": "2026-11-07T10:00:00+01:00",
 		"eventStatus": "https://schema.org/EventScheduled",
@@ -58,7 +58,7 @@
 		<!-- Subtitle -->
 		<p class="text-lg md:text-xl text-star-white/80 mb-10 max-w-3xl mx-auto leading-relaxed">
 			NyhedsNat er et årligt arrangement for væbnere, seniorvæbnere og seniorer i Landsdel 4. Over
-			en nat samles deltagere i redaktioner, oplever events og laver aviser i en fælles legeramme.
+			en nat samles deltagere i redaktioner, oplever hændelser og laver aviser i en fælles legeramme.
 		</p>
 
 		<!-- CTA Button -->
@@ -81,7 +81,7 @@
 
 			<div class="space-y-6 text-star-white/70 text-lg leading-relaxed">
 				<p>
-					Seniorerne skaber og spiller events. Væbnere og seniorvæbnere oplever dem, stiller
+					Seniorerne skaber og spiller hændelser. Væbnere og seniorvæbnere oplever dem, stiller
 					spørgsmål og formidler, hvad der er sket. Journalistrollen er en ramme for leg, fantasi og
 					fælles oplevelser – ikke en øvelse i rigtigt journalistisk arbejde.
 				</p>
@@ -144,9 +144,9 @@
 						/>
 					</svg>
 				</div>
-				<h3 class="text-xl font-bold text-star-white mb-3">Oplev events</h3>
+				<h3 class="text-xl font-bold text-star-white mb-3">Oplev hændelser</h3>
 				<p class="text-star-white/60">
-					Seniorerne skaber spændende, dramatiske og sjove events, som redaktionerne skal dække.
+					Seniorerne skaber spændende, dramatiske og sjove hændelser, som redaktionerne skal dække.
 				</p>
 			</div>
 

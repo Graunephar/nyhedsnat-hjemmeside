@@ -32,11 +32,11 @@
 
 				<!-- Timeline Items -->
 				{#each [
-					{ time: '19:00', title: 'Ankomst', icon: '🚗' },
-					{ time: '19:30', title: 'Velkomst', icon: '👋' },
-					{ time: '20:00', title: 'Hændelser starter', icon: '⚡' },
+					{ time: '19:00–20:00', title: 'Deltagerankomst', icon: '🚗' },
+					{ time: '20:00', title: 'Fælles intro', icon: '👋' },
+					{ time: '20:30', title: 'Hændelser starter', icon: '⚡' },
 					{ time: '01:00', title: 'Video skal afleveres', icon: '🎬' },
-					{ time: '', title: 'Natmad', icon: '🍕' },
+					{ time: '01:00', title: 'Natmad', icon: '🍕' },
 					{ time: '02:00', title: 'Pressefoto afleveres', icon: '📸' },
 					{ time: '', title: 'Sove eller arbejde på aviser', icon: '😴' },
 					{ time: '04:00', title: 'Aflevering af aviser', icon: '📰' },
@@ -80,7 +80,7 @@
 		<div class="card-dark rounded-2xl p-8 text-center">
 			<h2 class="text-2xl font-bold text-star-white mb-4">En hel nat med oplevelser</h2>
 			<p class="text-star-white/60 mb-6">
-				Fra ankomst fredag aften til præmieoverrækkelse og afslutning kl. 10:15 lørdag – fyldt med events, kreativitet og fællesskab.
+				Fra ankomst fredag aften til præmieoverrækkelse og afslutning kl. 10:15 lørdag – fyldt med hændelser, kreativitet og fællesskab.
 			</p>
 			<a
 				href="/tilmelding"

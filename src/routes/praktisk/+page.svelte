@@ -110,7 +110,7 @@
 					Transport og kortagekørsel
 				</h2>
 				<p class="text-star-white/70 mb-6 leading-relaxed">
-					Når redaktionerne rykker ud til events, sker det via et fælles kortagekørselssystem, som arrangørerne står for.
+					Når redaktionerne rykker ud til hændelser, sker det via et fælles kortagekørselssystem, som arrangørerne står for.
 				</p>
 				<ul class="space-y-3">
 					{#each [
