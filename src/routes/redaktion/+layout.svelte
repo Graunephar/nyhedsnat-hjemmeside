@@ -1,8 +1,6 @@
 <script lang="ts">
 	import { page } from '$app/state';
 
-	let sidebarOpen = $state(false);
-
 	const links = [
 		{ href: '/redaktion', label: 'Lav avis' },
 		{ href: '/redaktion/avismaskinen', label: 'Avismaskinen' },
@@ -36,29 +34,20 @@
 	<div class="mx-auto max-w-6xl">
 		<div class="grid items-start gap-6 md:grid-cols-[260px_1fr]">
 			<div class="md:hidden">
-				<button
-					onclick={() => (sidebarOpen = !sidebarOpen)}
-					class="w-full rounded-xl border border-gold-500/30 bg-night-800/80 px-4 py-3 text-left font-bold text-gold-400"
-				>
-					Menu: Lav avis
-				</button>
-				{#if sidebarOpen}
-					<nav class="mt-3 space-y-2 rounded-xl border border-gold-500/20 bg-night-800/70 p-3">
-						{#each links as link}
-							<a
-								href={link.href}
-								onclick={() => (sidebarOpen = false)}
-								class={`block rounded-lg px-3 py-2 ${
-									isActive(link.href)
-										? 'bg-gold-500/15 text-gold-400'
-										: 'text-star-white/80 hover:bg-night-700/50 hover:text-gold-400'
-								}`}
-							>
-								{link.label}
-							</a>
-						{/each}
-					</nav>
-				{/if}
+				<nav class="space-y-2 rounded-xl border border-gold-500/20 bg-night-800/70 p-3">
+					{#each links as link}
+						<a
+							href={link.href}
+							class={`block rounded-lg px-3 py-2 ${
+								isActive(link.href)
+									? 'bg-gold-500/15 text-gold-400'
+									: 'text-star-white/80 hover:bg-night-700/50 hover:text-gold-400'
+							}`}
+						>
+							{link.label}
+						</a>
+					{/each}
+				</nav>
 			</div>
 
 			<aside class="hidden self-start md:block">
