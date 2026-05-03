@@ -37,8 +37,8 @@
 					<a href="/praktisk" class="text-star-white/60 hover:text-gold-400 transition-colors text-sm">
 						Praktisk info
 					</a>
-					<a href="/regler" class="text-star-white/60 hover:text-gold-400 transition-colors text-sm">
-						Regler
+					<a href="/redaktion" class="text-star-white/60 hover:text-gold-400 transition-colors text-sm">
+						Lav avis
 					</a>
 					<a href="/faq" class="text-star-white/60 hover:text-gold-400 transition-colors text-sm">
 						FAQ

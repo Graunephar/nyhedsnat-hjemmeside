@@ -7,7 +7,7 @@
 		{ href: '/tilmelding', label: 'Tilmelding & indbydelse' },
 		{ href: '/program', label: 'Program' },
 		{ href: '/praktisk', label: 'Praktisk' },
-		{ href: '/regler', label: 'Regler for aviser' },
+		{ href: '/redaktion', label: 'Lav avis' },
 		{ href: '/faq', label: 'FAQ' },
 		{ href: '/kontakt', label: 'Kontakt' }
 	];
