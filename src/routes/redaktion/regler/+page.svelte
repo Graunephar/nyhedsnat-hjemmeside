@@ -18,6 +18,11 @@
 <div class="space-y-8">
 		<!-- Avisen -->
 		<section class="card-dark rounded-2xl p-8">
+			<div class="mb-8 border-b border-gold-500/20 pb-6">
+				<p class="mb-2 text-sm font-semibold uppercase tracking-wider text-gold-400/80">Lav avis</p>
+				<h1 class="mb-3 text-3xl font-semibold tracking-tight text-star-white md:text-4xl">Regler for aviser</h1>
+				<p class="max-w-2xl text-lg text-star-white/60">Krav til indhold og aflevering</p>
+			</div>
 			<h2 class="text-2xl font-bold text-star-white mb-4 flex items-center gap-3">
 				<span class="text-3xl">📰</span>
 				Avisen
