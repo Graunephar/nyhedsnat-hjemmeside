@@ -1,22 +1,6 @@
-<svelte:head>
-	<title>FAQ – NyhedsNat i Landsdel 4</title>
-	<meta name="description" content="Svar på de mest stillede spørgsmål om NyhedsNat – hvem planlægger, hvordan man deltager, hvad man skal medbringe og mere." />
-	<link rel="canonical" href="https://nyhedsnat.dk/faq" />
-	<meta property="og:site_name" content="NyhedsNat" />
-	<meta property="og:locale" content="da_DK" />
-	<meta property="og:type" content="website" />
-	<meta property="og:url" content="https://nyhedsnat.dk/faq" />
-	<meta property="og:title" content="FAQ – NyhedsNat i Landsdel 4" />
-	<meta property="og:description" content="Svar på de mest stillede spørgsmål om NyhedsNat – hvem planlægger, hvordan man deltager, hvad man skal medbringe og mere." />
-	<meta property="og:image" content="https://nyhedsnat.dk/images/logo.png" />
-	<meta name="twitter:card" content="summary" />
-	<meta name="twitter:title" content="FAQ – NyhedsNat i Landsdel 4" />
-	<meta name="twitter:description" content="Svar på de mest stillede spørgsmål om NyhedsNat – hvem planlægger, hvordan man deltager, hvad man skal medbringe og mere." />
-	<meta name="twitter:image" content="https://nyhedsnat.dk/images/logo.png" />
-</svelte:head>
-
 <script lang="ts">
 	import JoinButton from '$lib/components/JoinButton.svelte';
+	import { title } from 'process';
 
 	const faqSections = [
 		{
@@ -31,7 +15,12 @@ Derudover arbejder vi på at samle en gruppe seniorer, som er med til at planlæ
 De seniorer, der tilmelder sig og møder op på dagen, er med til at afvikle hændelser, få roller og skabe oplevelser for deltagerne. Alle bidrager, men på forskellige niveauer af ansvar.
 
 Har du som senior lyst til at være med i planlægningen på forhånd, så hører vi meget gerne fra dig via info@nyhedsnat.dk`
-				},
+				}
+			]
+		},
+		{
+			title: 'For seniorer',
+			items: [
 				{
 					question: 'Hvordan deltager man som senior?',
 					answer: `Alle hændelser planlægges af seniorer.
@@ -66,7 +55,7 @@ Det gør dem genkendelige og sjove at arbejde med, samtidig med at de er tydelig
 			]
 		},
 		{
-			title: 'For deltagere (væbnere/seniorvæbnere)',
+			title: 'For væbnere & seniorvæbnere',
 			items: [
 				{
 					question: 'Hvordan deltager man som væbner eller seniorvæbner?',
@@ -162,6 +151,32 @@ Så lederne har god tid til andre ting end at sidde bag et rat.`
 	}
 </script>
 
+<svelte:head>
+	<title>FAQ – NyhedsNat i Landsdel 4</title>
+	<meta
+		name="description"
+		content="Svar på de mest stillede spørgsmål om NyhedsNat – hvem planlægger, hvordan man deltager, hvad man skal medbringe og mere."
+	/>
+	<link rel="canonical" href="https://nyhedsnat.dk/faq" />
+	<meta property="og:site_name" content="NyhedsNat" />
+	<meta property="og:locale" content="da_DK" />
+	<meta property="og:type" content="website" />
+	<meta property="og:url" content="https://nyhedsnat.dk/faq" />
+	<meta property="og:title" content="FAQ – NyhedsNat i Landsdel 4" />
+	<meta
+		property="og:description"
+		content="Svar på de mest stillede spørgsmål om NyhedsNat – hvem planlægger, hvordan man deltager, hvad man skal medbringe og mere."
+	/>
+	<meta property="og:image" content="https://nyhedsnat.dk/images/logo.png" />
+	<meta name="twitter:card" content="summary" />
+	<meta name="twitter:title" content="FAQ – NyhedsNat i Landsdel 4" />
+	<meta
+		name="twitter:description"
+		content="Svar på de mest stillede spørgsmål om NyhedsNat – hvem planlægger, hvordan man deltager, hvad man skal medbringe og mere."
+	/>
+	<meta name="twitter:image" content="https://nyhedsnat.dk/images/logo.png" />
+</svelte:head>
+
 <div class="min-h-screen px-4 py-12">
 	<div class="mx-auto max-w-4xl">
 		<!-- Page Header -->
@@ -192,8 +207,18 @@ Så lederne har god tid til andre ting end at sidde bag et rat.`
 										class="flex h-8 w-8 flex-shrink-0 items-center justify-center rounded-full bg-gold-500/20 transition-transform duration-300"
 										class:rotate-180={openKey === key}
 									>
-										<svg class="h-4 w-4 text-gold-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-											<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+										<svg
+											class="h-4 w-4 text-gold-400"
+											fill="none"
+											stroke="currentColor"
+											viewBox="0 0 24 24"
+										>
+											<path
+												stroke-linecap="round"
+												stroke-linejoin="round"
+												stroke-width="2"
+												d="M19 9l-7 7-7-7"
+											/>
 										</svg>
 									</div>
 								</button>
@@ -201,7 +226,9 @@ Så lederne har god tid til andre ting end at sidde bag et rat.`
 								{#if openKey === key}
 									<div class="animate-fadeIn px-6 pb-6">
 										<div class="border-t border-gold-500/20 pt-4">
-											<p class="leading-relaxed whitespace-pre-line text-star-white/70">{faq.answer}</p>
+											<p class="leading-relaxed whitespace-pre-line text-star-white/70">
+												{faq.answer}
+											</p>
 										</div>
 									</div>
 								{/if}
